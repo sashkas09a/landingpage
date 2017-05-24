@@ -1,0 +1,41 @@
+// HEIGHT
+
+$header_height: 550px;
+$about_height: 400px;
+$video_height: 550px;
+$expertise_height: 750px;
+$team_height: 710px;
+$works_height: 740px;
+$testimonials_height: 500px;
+$contact_height: 650px;
+$footer_height: 400px;
+
+// BACKGROUND
+
+$video_background: url("../img/video-bg.jpg");
+$forest_background: url("../img/forest-bg.jpg");
+$footer_background: url("../img/footer-bg.jpg");
+$overlay_background: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+
+// FONT
+
+// $playfair-display: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf");
+// $hammersmith-one: url("../fonts/hammersmith-one/HammersmithOne.ttf");
+
+$playfair: 'Playfair Display';
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf");
+}
+
+$hammersmith: 'Hammersmith One';
+@font-face {
+  font-family: 'Hammersmith One';
+  src: url("../fonts/hammersmith-one/HammersmithOne.ttf");
+}
+
+$roboto: 'Roboto';
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Regular.ttf");
+}

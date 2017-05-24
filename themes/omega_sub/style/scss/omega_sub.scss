@@ -1,0 +1,72 @@
+@import "variables.scss";
+
+.overlay {
+  background: $overlay_background;
+  opacity: 0.85;
+}
+
+#about, #expertise, #works, #contact {
+  background: #fff;
+}
+
+header {
+  height: $header_height;
+  background: $forest_background center center;
+  background-size: cover;
+  h1 {
+    font-family: $roboto;
+  }
+  #header_overlay {
+    height: $header_height;
+  }
+}
+
+#about {
+  height: $about_height;
+}
+
+#video {
+  height: $video_height;
+  background: $video_background center center;
+  background-size: cover;
+  #video_overlay {
+    height: $video_height;
+  }
+}
+
+#expertise {
+  height: $expertise_height;
+}
+
+#team {
+  height: $team_height;
+  background: $forest_background center center;
+  background-size: cover;
+  #team_overlay {
+    height: $team_height;
+  }
+}
+
+#works {
+  height: $works_height;
+}
+
+#testimonials {
+  height: $testimonials_height;
+  background: $forest_background center center;
+  #testimonials_overlay {
+    height: $testimonials_height;
+  }
+}
+
+#contact {
+  height: $contact_height;
+}
+
+footer {
+  height: $footer_height;
+  background: $footer_background center center;
+  #footer_overlay {
+    height: $footer_height;
+  }
+}
