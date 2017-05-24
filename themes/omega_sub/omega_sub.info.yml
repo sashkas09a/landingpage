@@ -28,6 +28,9 @@ regions:
   # Footer
   footer: 'Footer'
 
+  # Content
+  content: 'Content'
+
 features:
   logo: true
   name: true
