@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf"); }
+
+@font-face {
+  font-family: 'Hammersmith One';
+  src: url("../fonts/hammersmith-one/HammersmithOne.ttf"); }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Regular.ttf"); }
+
+.overlay {
+  background: -webkit-gradient(linear, left top, right top, from(#09052f), to(#311d5e));
+  background: -webkit-linear-gradient(left, #09052f 0%, #311d5e 100%);
+  background: -o-linear-gradient(left, #09052f 0%, #311d5e 100%);
+  background: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85; }
+
+#about, #expertise, #works, #contact {
+  background: #fff; }
+
+header {
+  height: 550px;
+  background: url("../img/forest-bg.jpg") center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  header h1 {
+    font-family: "Roboto"; }
+  header #header_overlay {
+    height: 550px; }
+
+#about {
+  height: 400px; }
+
+#video {
+  height: 550px;
+  background: url("../img/video-bg.jpg") center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  #video #video_overlay {
+    height: 550px; }
+
+#expertise {
+  height: 750px; }
+
+#team {
+  height: 710px;
+  background: url("../img/forest-bg.jpg") center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  #team #team_overlay {
+    height: 710px; }
+
+#works {
+  height: 740px; }
+
+#testimonials {
+  height: 500px;
+  background: url("../img/forest-bg.jpg") center center; }
+  #testimonials #testimonials_overlay {
+    height: 500px; }
+
+#contact {
+  height: 650px; }
+
+footer {
+  height: 400px;
+  background: url("../img/footer-bg.jpg") center center; }
+  footer #footer_overlay {
+    height: 400px; }
