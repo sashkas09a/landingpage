@@ -1,0 +1,22 @@
+uuid: 0264e457-a855-4dbe-8d3c-a244195d6f3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.we_are_awesome_
+id: node.we_are_awesome_.status
+field_name: status
+entity_type: node
+bundle: we_are_awesome_
+label: 'Publishing status'
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,24 @@
+uuid: 4f56ae27-4b4b-407f-890a-d75de9476fa2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.we_are_awesome_.body
+    - node.type.we_are_awesome_
+  module:
+    - text
+    - user
+id: node.we_are_awesome_.default
+targetEntityType: node
+bundle: we_are_awesome_
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

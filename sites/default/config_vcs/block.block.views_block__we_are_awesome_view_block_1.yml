@@ -1,0 +1,30 @@
+uuid: 72b6833b-0cf9-464a-9634-da71e0879214
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.we_are_awesome_view
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__we_are_awesome_view_block_1
+theme: bartik
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:we_are_awesome_view-block_1'
+settings:
+  id: 'views_block:we_are_awesome_view-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

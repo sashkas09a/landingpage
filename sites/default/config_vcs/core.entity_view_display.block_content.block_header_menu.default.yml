@@ -1,0 +1,28 @@
+uuid: 9db9a11f-c589-4f5b-b730-e6cbd2a55f8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_header_menu
+    - field.field.block_content.block_header_menu.field_header
+    - field.field.block_content.block_header_menu.field_header_field
+id: block_content.block_header_menu.default
+targetEntityType: block_content
+bundle: block_header_menu
+mode: default
+content:
+  field_header:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_header_field:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden: {  }
