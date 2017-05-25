@@ -1,0 +1,22 @@
+uuid: e3debe4f-b2ee-44fd-b7c3-8b9aaef703ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.people_say
+id: node.people_say.status
+field_name: status
+entity_type: node
+bundle: people_say
+label: 'Publishing status'
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

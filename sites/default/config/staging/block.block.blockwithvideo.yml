@@ -1,0 +1,31 @@
+uuid: f0e834dd-16db-4ea5-bedf-e82af02f3ef7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:video_block:4240f63a-066f-4b43-b000-8b4ee2a62ba3'
+  module:
+    - block_content
+    - system
+  theme:
+    - omega_sub
+id: blockwithvideo
+theme: omega_sub
+region: video
+weight: 0
+provider: null
+plugin: 'block_content:4240f63a-066f-4b43-b000-8b4ee2a62ba3'
+settings:
+  id: 'block_content:4240f63a-066f-4b43-b000-8b4ee2a62ba3'
+  label: 'Block with video'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

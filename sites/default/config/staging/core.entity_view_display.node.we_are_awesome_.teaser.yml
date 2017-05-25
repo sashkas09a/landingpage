@@ -1,0 +1,26 @@
+uuid: c55f7e70-c8ed-49d2-a093-b4b97365cbf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.we_are_awesome_.body
+    - node.type.we_are_awesome_
+  module:
+    - text
+    - user
+id: node.we_are_awesome_.teaser
+targetEntityType: node
+bundle: we_are_awesome_
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: 498246db-6e60-4ca2-9837-cbec036d60a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.we_are_awesome_
+  module:
+    - text
+id: node.we_are_awesome_.body
+field_name: body
+entity_type: node
+bundle: we_are_awesome_
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

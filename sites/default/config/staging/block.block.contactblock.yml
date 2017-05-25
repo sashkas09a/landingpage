@@ -1,0 +1,29 @@
+uuid: 3e28d0f4-112c-4811-aa48-41a71974c667
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - contact_block
+    - system
+  theme:
+    - omega_sub
+id: contactblock
+theme: omega_sub
+region: contact
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'GIVE US A GOOD NEWS'
+  provider: contact_block
+  label_display: visible
+  contact_form: feedback
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

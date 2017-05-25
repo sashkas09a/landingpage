@@ -1,0 +1,22 @@
+uuid: 21b4f854-e545-4b12-a4db-98fc5e2e29e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.expertise
+id: node.expertise.status
+field_name: status
+entity_type: node
+bundle: expertise
+label: 'Publishing status'
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

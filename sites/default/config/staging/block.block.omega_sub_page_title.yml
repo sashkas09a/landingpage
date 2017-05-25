@@ -1,0 +1,20 @@
+uuid: 96cdbf32-b940-40a0-855f-fec7c9d6bc8b
+langcode: en
+status: false
+dependencies:
+  theme:
+    - omega_sub
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: omega_sub_page_title
+theme: omega_sub
+region: '-1'
+weight: -9
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

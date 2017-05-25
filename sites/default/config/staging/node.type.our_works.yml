@@ -1,0 +1,18 @@
+uuid: 1e5bd321-2b40-43a8-919a-5d2d17574530
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Our Works'
+type: our_works
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
