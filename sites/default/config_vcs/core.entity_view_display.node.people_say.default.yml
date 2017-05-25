@@ -1,0 +1,42 @@
+uuid: f015dfed-2e3d-41c6-be73-286d7cfeee46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.people_say.body
+    - field.field.node.people_say.field_image
+    - field.field.node.people_say.field_post
+    - node.type.people_say
+  module:
+    - image
+    - text
+    - user
+id: node.people_say.default
+targetEntityType: node
+bundle: people_say
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_post:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+hidden: {  }

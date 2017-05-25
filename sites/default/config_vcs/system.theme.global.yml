@@ -1,15 +1,15 @@
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: ''
+  mimetype: image/png
+  path: 'public://Logo_1.png'
   url: ''
-  use_default: true
+  use_default: false
 features:
-  comment_user_picture: true
-  comment_user_verification: true
+  comment_user_picture: false
+  comment_user_verification: false
   favicon: true
-  node_user_picture: true
+  node_user_picture: false
 logo:
-  path: 'public://Logo.png'
+  path: 'public://Logo_2.png'
   url: ''
   use_default: false
 _core:

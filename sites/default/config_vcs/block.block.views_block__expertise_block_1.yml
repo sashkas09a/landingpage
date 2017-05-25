@@ -1,0 +1,30 @@
+uuid: 5265b34e-df27-4c1a-9b23-b5d05c088a75
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.expertise
+  module:
+    - system
+    - views
+  theme:
+    - omega_sub
+id: views_block__expertise_block_1
+theme: omega_sub
+region: expertise
+weight: -8
+provider: null
+plugin: 'views_block:expertise-block_1'
+settings:
+  id: 'views_block:expertise-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,8 @@
+uuid: 2420111b-2b66-4022-a44f-279842f105ae
+langcode: en
+status: true
+dependencies: {  }
+id: video_block
+label: 'video block'
+revision: 0
+description: 'Block with video field'

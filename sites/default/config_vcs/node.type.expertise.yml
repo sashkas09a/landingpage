@@ -1,0 +1,18 @@
+uuid: a45bade6-7679-42b9-8112-b6b3167d4793
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Expertise
+type: expertise
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

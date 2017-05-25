@@ -1,0 +1,36 @@
+uuid: c6a5b13e-ce83-417d-934e-364e763fc54e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.expertise.body
+    - field.field.node.expertise.field_image
+    - node.type.expertise
+  module:
+    - image
+    - text
+    - user
+id: node.expertise.default
+targetEntityType: node
+bundle: expertise
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

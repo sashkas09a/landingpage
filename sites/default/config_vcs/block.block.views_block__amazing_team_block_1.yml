@@ -1,0 +1,30 @@
+uuid: 50d6805a-3f56-43da-bf51-8d8af4bb84cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.amazing_team
+  module:
+    - system
+    - views
+  theme:
+    - omega_sub
+id: views_block__amazing_team_block_1
+theme: omega_sub
+region: team
+weight: 0
+provider: null
+plugin: 'views_block:amazing_team-block_1'
+settings:
+  id: 'views_block:amazing_team-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

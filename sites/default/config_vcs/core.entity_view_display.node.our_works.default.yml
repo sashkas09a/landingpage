@@ -1,0 +1,28 @@
+uuid: 9b93749b-0d66-4dba-91f3-037b3b87709a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.our_works.field_image
+    - node.type.our_works
+  module:
+    - image
+    - user
+id: node.our_works.default
+targetEntityType: node
+bundle: our_works
+mode: default
+content:
+  field_image:
+    weight: 102
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
