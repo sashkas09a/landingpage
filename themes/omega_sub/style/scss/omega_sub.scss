@@ -4,6 +4,13 @@
   background: $overlay_background;
   opacity: 0.85;
 }
+// header, #about, #video, #expertise, #team, #works, #testimonials, #contact, footer {
+//   padding: 0 150px;
+// }
+
+.theme-demo-block {
+  display: none !important;
+}
 
 #about,
 #contact,
