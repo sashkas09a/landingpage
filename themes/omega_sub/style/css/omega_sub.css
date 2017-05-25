@@ -15,7 +15,11 @@
   background: -webkit-linear-gradient(left, #09052f 0%, #311d5e 100%);
   background: -o-linear-gradient(left, #09052f 0%, #311d5e 100%);
   background: linear-gradient(to right, #09052f 0%, #311d5e 100%);
-  opacity: 0.85; }
+  opacity: 0.2;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .theme-demo-block {
   display: none !important; }
