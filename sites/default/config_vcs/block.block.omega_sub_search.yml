@@ -11,7 +11,7 @@ _core:
 id: omega_sub_search
 theme: omega_sub
 region: '-1'
-weight: -6
+weight: -7
 provider: null
 plugin: search_form_block
 settings:

@@ -1,0 +1,31 @@
+uuid: 9b61dd66-eaa8-46cd-94eb-1339654972d6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_with_image:2342d38e-310d-4d95-ac59-0d3708e0ad03'
+  module:
+    - block_content
+    - system
+  theme:
+    - omega_sub
+id: blockwithimage
+theme: omega_sub
+region: contact
+weight: 0
+provider: null
+plugin: 'block_content:2342d38e-310d-4d95-ac59-0d3708e0ad03'
+settings:
+  id: 'block_content:2342d38e-310d-4d95-ac59-0d3708e0ad03'
+  label: 'OUR HAPPY CLIENT'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
