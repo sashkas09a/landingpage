@@ -1,0 +1,31 @@
+uuid: a52e0812-781e-42ce-81c0-9026f95b1cc1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_block_links:79a3f79a-b03e-43dd-8bfa-25dc5b856c05'
+  module:
+    - block_content
+    - system
+  theme:
+    - omega_sub
+id: blockwithlinks
+theme: omega_sub
+region: footer
+weight: -11
+provider: null
+plugin: 'block_content:79a3f79a-b03e-43dd-8bfa-25dc5b856c05'
+settings:
+  id: 'block_content:79a3f79a-b03e-43dd-8bfa-25dc5b856c05'
+  label: 'Block with links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

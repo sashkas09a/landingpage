@@ -1,0 +1,20 @@
+uuid: 7931ebff-cbdb-4200-8116-3ea601a1aaf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block_copyright_
+    - field.field.block_content.footer_block_copyright_.field_copyright
+id: block_content.footer_block_copyright_.default
+targetEntityType: block_content
+bundle: footer_block_copyright_
+mode: default
+content:
+  field_copyright:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden: {  }

@@ -1,6 +1,6 @@
 uuid: b39b83ac-e810-457a-a593-31edf9941470
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.account
@@ -12,8 +12,8 @@ _core:
   default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
 id: omega_sub_account_menu
 theme: omega_sub
-region: '-1'
-weight: -5
+region: header
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:

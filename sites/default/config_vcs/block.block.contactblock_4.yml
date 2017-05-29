@@ -1,0 +1,23 @@
+uuid: fa7e9290-26c2-4ce8-a5bf-c5248f66307b
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - contact_block
+  theme:
+    - bartik
+id: contactblock_4
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Contact block'
+  provider: contact_block
+  label_display: visible
+  contact_form: feedback
+visibility: {  }

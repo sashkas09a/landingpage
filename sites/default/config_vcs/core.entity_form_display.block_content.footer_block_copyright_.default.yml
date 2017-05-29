@@ -1,0 +1,27 @@
+uuid: 403c0f0a-9501-4789-9396-872e9cefa0e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block_copyright_
+    - field.field.block_content.footer_block_copyright_.field_copyright
+id: block_content.footer_block_copyright_.default
+targetEntityType: block_content
+bundle: footer_block_copyright_
+mode: default
+content:
+  field_copyright:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

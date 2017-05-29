@@ -1,0 +1,8 @@
+uuid: af8865f3-3d69-4d2f-bedb-7daf58489b8f
+langcode: en
+status: true
+dependencies: {  }
+id: block_with_social_icons
+label: 'Block with social icons'
+revision: 0
+description: ''

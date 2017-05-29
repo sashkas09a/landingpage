@@ -1,0 +1,31 @@
+uuid: c874311a-cd86-4868-a814-495fca8b2bf2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_with_social_icons:195ec3cd-198c-40fc-bb61-881658cd359d'
+  module:
+    - block_content
+    - system
+  theme:
+    - omega_sub
+id: blockwithsocialicons
+theme: omega_sub
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:195ec3cd-198c-40fc-bb61-881658cd359d'
+settings:
+  id: 'block_content:195ec3cd-198c-40fc-bb61-881658cd359d'
+  label: 'Block with social icons'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

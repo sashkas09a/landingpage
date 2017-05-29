@@ -1,0 +1,29 @@
+uuid: d6092878-bd01-49a8-baaa-9dd461d91c80
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block_links
+    - field.field.block_content.footer_block_links.field_footer_link
+  module:
+    - link
+id: block_content.footer_block_links.default
+targetEntityType: block_content
+bundle: footer_block_links
+mode: default
+content:
+  field_footer_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  info:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

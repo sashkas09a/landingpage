@@ -11,7 +11,7 @@ _core:
 id: omega_sub_breadcrumbs
 theme: omega_sub
 region: header
-weight: -7
+weight: -12
 provider: null
 plugin: system_breadcrumb_block
 settings:

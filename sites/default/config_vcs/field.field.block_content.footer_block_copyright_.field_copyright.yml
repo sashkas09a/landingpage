@@ -1,0 +1,19 @@
+uuid: b31eb8ad-7dcb-4af6-8c31-edf8268f54fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_block_copyright_
+    - field.storage.block_content.field_copyright
+id: block_content.footer_block_copyright_.field_copyright
+field_name: field_copyright
+entity_type: block_content
+bundle: footer_block_copyright_
+label: Copyright
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

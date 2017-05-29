@@ -1,0 +1,33 @@
+uuid: 7d90b93a-8bc8-4a6d-8f80-16e3e59f4290
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.field.contact_message.feedback.field_email
+    - field.field.contact_message.feedback.field_name
+id: contact_message.feedback.default
+targetEntityType: contact_message
+bundle: feedback
+mode: default
+content:
+  field_email:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_name:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  message:
+    type: basic_string
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

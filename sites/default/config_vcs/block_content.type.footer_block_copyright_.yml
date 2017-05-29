@@ -1,0 +1,8 @@
+uuid: 62da00f5-a0dd-4bc1-9225-af880945993a
+langcode: en
+status: true
+dependencies: {  }
+id: footer_block_copyright_
+label: 'Footer block Copyright '
+revision: 0
+description: ''

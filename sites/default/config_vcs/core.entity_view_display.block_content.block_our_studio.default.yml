@@ -1,0 +1,29 @@
+uuid: b8d87e00-bc82-4287-8a21-5ba472852079
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_our_studio
+    - field.field.block_content.block_our_studio.body
+    - field.field.block_content.block_our_studio.field_phone
+  module:
+    - text
+id: block_content.block_our_studio.default
+targetEntityType: block_content
+bundle: block_our_studio
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_phone:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden: {  }

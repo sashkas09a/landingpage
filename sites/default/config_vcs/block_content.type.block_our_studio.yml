@@ -1,0 +1,8 @@
+uuid: 312c8b35-cf97-4263-b04b-7896dac883a3
+langcode: en
+status: true
+dependencies: {  }
+id: block_our_studio
+label: 'Block Our Studio'
+revision: 0
+description: ''

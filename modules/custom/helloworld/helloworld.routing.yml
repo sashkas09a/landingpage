@@ -1,0 +1,15 @@
+helloworld.hellopage:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\helloworld\Controller\HelloWorldController::helloworld'
+  requirements:
+    _permission: 'view content'
+
+collect_phone.form:
+  path: '/collect-phone'
+  defaults:
+    _title: 'Collect Phone - Form API example.'
+    # Подгружаем форму по неймспейсу.
+    _form: '\Drupal\helloworld\Form\CollectPhone'
+  requirements:
+    _permission: 'access content'

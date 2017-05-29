@@ -1,0 +1,23 @@
+uuid: ac08d894-429c-4590-9109-88f01abd726c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_with_social_icons
+    - field.storage.block_content.field_social_icon
+  module:
+    - link
+id: block_content.block_with_social_icons.field_social_icon
+field_name: field_social_icon
+entity_type: block_content
+bundle: block_with_social_icons
+label: 'social icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

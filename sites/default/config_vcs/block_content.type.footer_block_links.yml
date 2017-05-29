@@ -1,0 +1,8 @@
+uuid: a45ab6f5-a051-4237-aaff-2af053b56103
+langcode: en
+status: true
+dependencies: {  }
+id: footer_block_links
+label: 'Footer block links'
+revision: 0
+description: ''

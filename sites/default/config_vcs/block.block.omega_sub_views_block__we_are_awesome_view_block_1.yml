@@ -12,7 +12,7 @@ dependencies:
 id: omega_sub_views_block__we_are_awesome_view_block_1
 theme: omega_sub
 region: header
-weight: -4
+weight: -9
 provider: null
 plugin: 'views_block:we_are_awesome_view-block_1'
 settings:

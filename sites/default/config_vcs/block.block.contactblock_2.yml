@@ -1,0 +1,29 @@
+uuid: bb55cfb9-e7c4-4e56-9add-4240d0fb391d
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.stay_in_touch
+  module:
+    - contact_block
+    - system
+  theme:
+    - omega_sub
+id: contactblock_2
+theme: omega_sub
+region: footer
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'STAY IN TOUCH'
+  provider: contact_block
+  label_display: visible
+  contact_form: stay_in_touch
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

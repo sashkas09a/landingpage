@@ -11,7 +11,7 @@ _core:
 id: omega_sub_messages
 theme: omega_sub
 region: header
-weight: -5
+weight: -10
 provider: null
 plugin: system_messages_block
 settings:

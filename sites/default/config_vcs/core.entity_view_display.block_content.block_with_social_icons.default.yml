@@ -1,0 +1,26 @@
+uuid: 73841d2e-d984-4aef-aa4a-dbfdc047490f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_with_social_icons
+    - field.field.block_content.block_with_social_icons.field_social_icon
+  module:
+    - link
+id: block_content.block_with_social_icons.default
+targetEntityType: block_content
+bundle: block_with_social_icons
+mode: default
+content:
+  field_social_icon:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: dd7e2931-bccf-4aec-9b70-6d2b08b8cfbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.stay_in_touch
+    - field.field.contact_message.stay_in_touch.field_email
+id: contact_message.stay_in_touch.default
+targetEntityType: contact_message
+bundle: stay_in_touch
+mode: default
+content:
+  field_email:
+    type: email_default
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  copy: true
+  mail: true
+  message: true
+  name: true
+  subject: true

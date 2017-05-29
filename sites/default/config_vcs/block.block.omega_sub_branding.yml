@@ -11,7 +11,7 @@ _core:
 id: omega_sub_branding
 theme: omega_sub
 region: header
-weight: -6
+weight: -11
 provider: null
 plugin: system_branding_block
 settings:
