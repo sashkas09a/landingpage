@@ -1,18 +1,26 @@
+@import "bootstrap.css";
 @import "variables.scss";
+@import "global.scss";
 
 .overlay {
   background: $overlay_background;
-  opacity: 0.2; // 0.85
+  opacity: 0.85;
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
 }
-  // header, #about, #video, #expertise, #team, #works, #testimonials, #contact, footer {
-  //   padding: 0 150px;
-  // }
+// temporary
 
-.theme-demo-block {
+body {
+  padding-top: 0;
+}
+// overwrite theme's demo regions display
+
+#block-omega-sub-branding,
+.messages--warning,
+.theme-demo-block,
+.toolbar-bar {
   display: none !important;
 }
 
@@ -20,21 +28,158 @@
 #contact,
 #expertise,
 #works {
-  background: #fff;
+  background: $white;
 }
 
 header {
   height: $header_height;
-  background: $forest_background center center;
-  background-size: cover;
+  position: relative;
 
-  #header_overlay {
+  .carousel {
     height: $header_height;
+
+    .carousel-indicators .active {
+      background: $color_1;
+      border-color: $color_1;
+    }
+
+    .carousel-inner {
+      .item {
+        height: $header_height;
+        background: $forest_background center center;
+        background-size: cover;
+
+        > :after {
+          @include overlay($header_top);
+        }
+      }
+    }
+  }
+
+  nav {
+    text-align: right;
+    margin-top: 20px;
+    position: absolute !important;
+    top: 0;
+    right: 20%;
+    z-index: 500;
+
+    ul {
+      > :first-child > a {
+        color: $color_1 !important;
+      }
+
+      li {
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 5px 12px;
+
+        a {
+          font-size: 13px;
+          line-height: 24px;
+          color: $white !important;
+          font-weight: 900;
+          letter-spacing: 0.25px;
+        }
+
+        a:hover {
+          text-decoration: none !important;
+          cursor: pointer;
+          color: $color_1 !important;
+        }
+      }
+    }
+  }
+  // HEADER
+  #block-omega-sub-views-block-we-are-awesome-view-block-1 {
+    .views-field-title {
+      position: absolute;
+      top: 230px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      color: $white;
+      font-family: $playfair;
+      font-size: 32px;
+      font-weight: 900;
+      z-index: 500;
+    }
+
+    .views-field-body {
+      color: $white;
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      position: absolute;
+      top: 310px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      z-index: 500;
+      text-align: center;
+    }
+
+    .views-field-view-node span a {
+      top: 445px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
   }
 }
 
 #about {
   height: $about_height;
+  padding: 70px 5%;
+  position: relative;
+
+  #block-omega-sub-views-block-our-story-block-1-2 {
+    position: relative;
+
+    .views-field-title {
+      color: $gray;
+      font-family: $playfair;
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      position: absolute;
+      top: -10px;
+      left: 560px;
+    }
+
+    .views-field-body {
+      opacity: 0.75;
+      color: $gray;
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      position: absolute;
+      top: 30px;
+      left: 560px;
+    }
+
+    .views-field-field-image {
+      position: absolute;
+      left: 245px;
+      top: 0;
+      width: 235px;
+      height: 229px;
+      background: url("../img/logo.png") center center;
+      background-size: cover;
+
+      img {
+        display: none;
+      }
+    }
+
+    .views-field-view-node {
+      span a {
+        top: 260px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+    }
+  }
 }
 
 #video {
@@ -42,9 +187,41 @@ header {
   background: $video_background center center;
   background-size: cover;
 
-  #video_overlay {
-    height: $video_height;
+  .play_button {
+    background: transparent;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    z-index: 10;
+
+    img {
+      border: 3px solid $white;
+      border-radius: 50%;
+      padding: 25px 24px 24px 33px;
+      overflow: auto;
+
+      &:hover {
+
+      }
+    }
+
+
+    span {
+      margin-top: 30px;
+      text-transform: uppercase;
+      color: $white;
+      font-family: $roboto;
+      font-size: 16px;
+      font-weight: 900;
+      display: block;
+    }
   }
+}
+
+#video:after {
+  @include overlay($video_top);
 }
 
 #expertise {

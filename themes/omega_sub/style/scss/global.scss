@@ -1,0 +1,43 @@
+@import "variables.scss";
+a:hover {
+  text-decoration: none !important;
+}
+
+@keyframes learn_more_button {
+  0% {
+    color: $color_1;
+    border-color: $color_1;
+  }
+  100% {
+    color: $white;
+    border-color: $white;
+    background: $color_1;
+  }
+}
+// button "learn more"
+.views-field-view-node {
+  span a {
+    color: #00e0d0;
+    font-family: $hammersmith;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 500;
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: 1px solid #00e0d0;
+  }
+}
+
+@mixin overlay($top) {
+  content: "";
+  display: block;
+  position: absolute;
+  top: $top;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: $overlay_background;
+  opacity: 0.85;
+}

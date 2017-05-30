@@ -8,12 +8,15 @@ omega_sub:
       style/css/omega_sub.css: 'style/scss/omega_sub.scss'
   version: VERSION
   js:
+    js/jquery-3.2.1.min.js: {}
+    js/bootstrap.js: {}
     js/omega_sub.js: {}
   css:
     theme:
+      style/css/bootstrap.css: {}
       style/css/omega_sub.css: {}
     layout: 
-      #style/css/layout/some-layout-file.css: {}
+      #style/css/layout/primary-layout.css: {}
     component:
       #style/css/components/some-component.css: {}
   dependencies:
