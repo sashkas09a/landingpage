@@ -13,7 +13,7 @@ _core:
 id: omega_sub_tools
 theme: omega_sub
 region: '-1'
-weight: -10
+weight: -7
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

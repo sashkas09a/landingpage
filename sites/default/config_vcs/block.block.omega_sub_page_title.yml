@@ -9,7 +9,7 @@ _core:
 id: omega_sub_page_title
 theme: omega_sub
 region: '-1'
-weight: -12
+weight: -11
 provider: null
 plugin: page_title_block
 settings:

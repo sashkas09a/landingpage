@@ -1,6 +1,6 @@
 uuid: 7e154892-6517-4656-9686-47becd1d389f
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -10,8 +10,8 @@ _core:
   default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
 id: omega_sub_help
 theme: omega_sub
-region: content
-weight: -5
+region: '-1'
+weight: -12
 provider: null
 plugin: help_block
 settings:
