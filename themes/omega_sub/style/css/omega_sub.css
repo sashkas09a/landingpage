@@ -141,24 +141,26 @@ header {
     header .carousel .carousel-indicators .active {
       background: #00e0d0;
       border-color: #00e0d0; }
-    header .carousel .carousel-inner .item {
-      height: 670px;
-      background: url("../img/forest-bg.jpg") center center;
-      -webkit-background-size: cover;
-              background-size: cover; }
-      header .carousel .carousel-inner .item > :after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 670px;
-        width: 100%;
-        background-image: -webkit-gradient(linear, left top, right top, from(#09052f), to(#311d5e));
-        background-image: -webkit-linear-gradient(left, #09052f 0%, #311d5e 100%);
-        background-image: -o-linear-gradient(left, #09052f 0%, #311d5e 100%);
-        background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
-        opacity: 0.85; }
+    header .carousel .carousel-inner {
+      height: 100%; }
+      header .carousel .carousel-inner .item {
+        height: 670px !important;
+        background: url("../img/forest-bg.jpg") center center;
+        -webkit-background-size: cover;
+                background-size: cover; }
+        header .carousel .carousel-inner .item > :after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 670px;
+          width: 100%;
+          background-image: -webkit-gradient(linear, left top, right top, from(#09052f), to(#311d5e));
+          background-image: -webkit-linear-gradient(left, #09052f 0%, #311d5e 100%);
+          background-image: -o-linear-gradient(left, #09052f 0%, #311d5e 100%);
+          background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+          opacity: 0.85; }
   header #site-branding {
     margin-top: 0; }
   header .site-name {
@@ -594,6 +596,8 @@ header {
   background: url("../img/forest-bg.jpg") center center; }
   #testimonials .carousel-inner {
     z-index: 500; }
+    #testimonials .carousel-inner .item {
+      height: 230px !important; }
   #testimonials #quotes_carousel > ol > li:nth-child(1) {
     background: url("../img/quote-img-1.png") center center no-repeat;
     -webkit-background-size: cover;
