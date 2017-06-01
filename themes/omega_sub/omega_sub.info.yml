@@ -1,11 +1,11 @@
-name: omega-sub
-type: theme
-description: 'Omega Subtheme '
-package: Core
-'base theme': omega_simple_starterkit
-force_export: false
-inherit_layout: false
-scss_support: false
+name:                         omega-sub
+type:                         theme
+description:                  'Omega Subtheme '
+package:                      Core
+'base theme':                 omega_simple_starterkit
+force_export:                 false
+inherit_layout:               false
+scss_support:                 false
 libraries:
   - omega_sub/omega_sub
 
@@ -14,34 +14,35 @@ libraries:
 regions:
 
   # Header
-  header: 'Header'
-
+  header:                     'Header'
+  slider:                     'Slider'
   # Content
-  about: 'About'
-  video: 'Video'
-  expertise: 'Expertise'
-  team: 'Team'
-  works: 'Works'
-  testimonials: 'Testimonials'
-  contact: 'Contact'
+  about:                      'About'
+  video:                      'Video'
+  expertise:                  'Expertise'
+  team:                       'Team'
+  works:                      'Works'
+  testimonials:               'Testimonials'
+  quote:                      'Quote'
+  contact:                    'Contact'
 
   # Footer
-  footer: 'Footer'
+  footer:                     'Footer'
 
   # Content
-  content: 'Content'
+  content:                    'Content'
 
 features:
-  logo: true
-  name: true
-  slogan: true
-  node_user_picture: true
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  main_menu: true
-  secondary_menu: true
-version: 8.x-5.x
-core: 8.x
-project: omega
-datestamp: 1469485442
+  logo:                       true
+  name:                       true
+  slogan:                     true
+  node_user_picture:          true
+  comment_user_picture:       true
+  comment_user_verification:  true
+  favicon:                    true
+  main_menu:                  true
+  secondary_menu:             true
+version:                      8.x-5.x
+core:                         8.x
+project:                      omega
+datestamp:                    1469485442

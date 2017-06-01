@@ -3,12 +3,20 @@ $white:                #ffffff;
 $color_1:              #00e0d0;
 $gray:                 #413d4b;
 
+// our works gray colors
+$gray_1: #b6b6b6;
+$gray_2: #acacac;
+$gray_3: #a1a1a1;
+$gray_4: #909090;
+$gray_5: #bababa;
+$gray_6: #a9a9a9;
+
 // region height
 $header_height:        670px;
 $about_height:         400px;
 $video_height:         550px;
 $expertise_height:     750px;
-$team_height:          710px;
+$team_height:          720px;
 $works_height:         740px;
 $testimonials_height:  500px;
 $contact_height:       650px;
@@ -19,7 +27,7 @@ $header_top:           0;
 $about_top:            $header_height;
 $video_top:            $about_top + $about_height;
 $expertise_top:        $video_top + $video_height;
-$team_top:             $expertise_top + $expertise_height;
+$team_top:             $expertise_top + $expertise_height + 70px;
 $works_top:            $team_top + $team_height;
 $testimonials_top:     $works_top + $works_height;
 $contact_top:          $testimonials_top + testimonials_height;

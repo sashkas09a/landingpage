@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+@mixin overlay($top, $height) {
+  content: "";
+  display: block;
+  position: absolute;
+  top: $top;
+  left: 0;
+  height: $height;
+  width: 100%;
+  background-image: $overlay_background;
+  opacity: 0.85;
+}
+@mixin center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin left {
+  left: 50%;
+  transform: translate(-50%, 0%);
+}

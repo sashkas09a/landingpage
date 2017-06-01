@@ -1,6 +1,7 @@
 @import "bootstrap.css";
 @import "variables.scss";
 @import "global.scss";
+@import "mixins.scss";
 
 .overlay {
   background: $overlay_background;
@@ -50,7 +51,7 @@ header {
         background-size: cover;
 
         > :after {
-          @include overlay($header_top);
+          @include overlay($header_top, $header_height);
         }
       }
     }
@@ -91,39 +92,48 @@ header {
       }
     }
   }
-  // HEADER
-  #block-omega-sub-views-block-we-are-awesome-view-block-1 {
-    .views-field-title {
-      position: absolute;
-      top: 230px;
-      left: 50%;
-      transform: translate(-50%, 0%);
-      color: $white;
-      font-family: $playfair;
-      font-size: 32px;
-      font-weight: 900;
-      z-index: 500;
-    }
+}
+// HEADER
 
-    .views-field-body {
-      color: $white;
-      font-family: $roboto;
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 24px;
-      position: absolute;
-      top: 310px;
-      left: 50%;
-      transform: translate(-50%, 0%);
-      z-index: 500;
-      text-align: center;
-    }
+#block-omega-sub-views-block-we-are-awesome-view-block-1 {
+  .views-field-title {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: $white;
+    font-family: $playfair;
+    font-size: 32px;
+    font-weight: 900;
+    z-index: 500;
 
-    .views-field-view-node span a {
-      top: 445px;
-      left: 50%;
-      transform: translate(-50%, 0%);
+    &:after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background-color: $color_1;
+      position: absolute;
+      top: 60px;
+      @include left;
     }
+  }
+
+  .views-field-body {
+    color: $white;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    position: absolute;
+    top: 310px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 500;
+    text-align: center;
+  }
+
+  .views-field-view-node span a {
+    top: 445px;
   }
 }
 
@@ -144,6 +154,10 @@ header {
       position: absolute;
       top: -10px;
       left: 560px;
+
+      span a {
+        color: $gray;
+      }
     }
 
     .views-field-body {
@@ -156,6 +170,7 @@ header {
       position: absolute;
       top: 30px;
       left: 560px;
+      max-width: 550px;
     }
 
     .views-field-field-image {
@@ -174,9 +189,7 @@ header {
 
     .views-field-view-node {
       span a {
-        top: 260px;
-        left: 50%;
-        transform: translate(-50%, 0%);
+        top: 210px;
       }
     }
   }
@@ -190,23 +203,30 @@ header {
   .play_button {
     background: transparent;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @include center;
     border: none;
     z-index: 10;
+    outline: none;
 
-    img {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      @include left;
+      height: 100px;
+      width: 100px;
       border: 3px solid $white;
       border-radius: 50%;
-      padding: 25px 24px 24px 33px;
-      overflow: auto;
-
-      &:hover {
-
-      }
+      z-index: 10;
     }
 
+    img {
+      padding: 18px 24px 24px 35px;
+      overflow: auto;
+
+      &:hover {}
+    }
 
     span {
       margin-top: 30px;
@@ -218,14 +238,97 @@ header {
       display: block;
     }
   }
-}
 
-#video:after {
-  @include overlay($video_top);
+  &:after {
+    @include overlay($video_top, $video_height);
+  }
 }
 
 #expertise {
+  .col-1,
+  .col-2,
+  .col-3 {
+    padding: 0 20px;
+  }
   height: $expertise_height;
+  padding: 0 15%;
+  text-align: center;
+
+  .view-header {
+    color: $gray;
+    font-family: $playfair;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 70px auto;
+
+    p {
+      opacity: 0.75;
+      color: #2f2d35;
+      font-family: $playfair;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: none;
+      margin: 20px 0;
+
+      &:after {
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color: #413d4b;
+        opacity: 0.3;
+        position: absolute;
+        top: 100px;
+        @include left;
+      }
+    }
+  }
+
+  .views-field-title {
+    color: $gray;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 15px auto;
+  }
+
+  .views-field-body {
+    opacity: 0.75;
+    color: #333333;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 70px;
+    line-height: 26px;
+  }
+
+  .views-field-field-image {
+    &:before {
+      content: '';
+      display: block;
+      position: relative;
+      top: 0;
+      @include left;
+      height: 100px;
+      width: 100px;
+    }
+
+    img {
+      display: none;
+    }
+  }
+}
+@for $i from 1 through 3 {
+  .row-1 > .col-#{$i} > .views-field-field-image:before {
+    background: url("../img/expertise-icon-#{$i}.png") center center no-repeat;
+  }
+}
+@for $i from 4 through 6 {
+  .row-2 > .col-#{$i - 3} > .views-field-field-image:before {
+    background: url("../img/expertise-icon-#{$i}.png") center center no-repeat;
+  }
 }
 
 #team {
@@ -233,33 +336,331 @@ header {
   background: $forest_background center center;
   background-size: cover;
 
-  #team_overlay {
-    height: $team_height;
+  .view {
+    z-index: 999;
+    text-align: center;
+  }
+
+  .view-header {
+    color: $white;
+    font-family: $playfair;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 70px;
+
+    p {
+      color: #f9f9f9;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: none;
+      margin: 15px 0 60px;
+    }
+  }
+
+  .views-view-grid {
+    text-align: center;
+
+    .views-row {
+      max-width: 220px;
+      border: 1px solid $white;
+
+      .views-field-field-image {
+        background: $white;
+        width: 100%;
+        height: 230px;
+
+        img {
+          display: none;
+        }
+      }
+
+      .views-field-field-post {
+        margin-bottom: 25px;
+        opacity: 0.7;
+        color: #fafafa;
+        font-family: $roboto;
+        font-size: 13px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+
+      .views-field-title {
+        margin: 20px auto 5px;
+
+        a {
+          color: $white;
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: 900;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .view-footer {
+    color: #f3f3f3;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 60px;
+
+    p {
+      margin-bottom: 25px;
+    }
+  }
+
+  &:after {
+    @include overlay($team_top, $team_height);
   }
 }
 
 #works {
   height: $works_height;
+  padding: 70px 0;
+
+  #block-views-block-our-works-block-1 {
+    h2 {
+      color: $gray;
+      font-family: $playfair;
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 0;
+      display: inline-block;
+      float: left;
+      margin-left: 20%;
+    }
+
+    .view-header {
+      display: inline-block;
+      float: right;
+      margin-right: 20%;
+      padding-top: 5px;
+
+      a {
+        color: $gray;
+        font-family: $roboto;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+
+    .view-footer a {
+      position: relative;
+      bottom: -80px;
+      left: 46.5%;
+    }
+
+    .view-content {
+      padding-top: 90px;
+      // @for $i from 1 through 6 {
+      //   .row-1 > .col-#{$i} > .views-field-field-image {
+      //     background-color: $gray_#{$i};
+      //   }
+      // }
+      @each $i, $gray_color in (1, $gray_1), (2, $gray_2), (3, $gray_3), (4, $gray_4), (5, $gray_5), (6, $gray_6) {
+        .row-1 > .col-#{$i} > .views-field-field-image {
+          background-color: $gray_color;
+        }
+      }
+      @each $i, $gray_color in (1, $gray_6), (2, $gray_5), (3, $gray_4), (4, $gray_3), (5, $gray_2), (6, $gray_1) {
+        .row-2 > .col-#{$i} > .views-field-field-image {
+          background-color: $gray_color;
+        }
+      }
+
+      .views-field-field-image {
+        height: 200px;
+        max-width: 267px;
+
+        img {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 #testimonials {
   height: $testimonials_height;
   background: $forest_background center center;
 
-  #testimonials_overlay {
-    height: $testimonials_height;
+  .carousel-inner {
+    z-index: 500;
+  }
+  @for $i from 1 through 5 {
+    #quotes_carousel > ol > li:nth-child(#{$i}) {
+      background: url("../img/quote-img-#{$i}.png") center center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    top: 370px;
+    @include left;
+    margin: 0 auto;
+
+    li {
+      width: 45px;
+      height: 45px;
+      margin: 0 7px;
+      border: none;
+      background-size: cover;
+    }
+
+    li.active {
+      width: 70px;
+      height: 70px;
+      margin-top: -20px;
+      position: relative;
+      top: 15px;
+    }
+  }
+
+  .carousel-control {
+    position: absolute;
+    top: 387px;
+    z-index: 99;
+  }
+
+  .left {
+    left: 28%;
+  }
+
+  .right {
+    right: 28%;
+  }
+
+  #block-views-block-people-say-block-1 {
+    margin-top: 70px;
+
+    .views-field-body {
+      opacity: 0.85;
+      color: $white;
+      font-family: $playfair;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      max-width: 770px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .views-field-title {
+      text-align: center;
+      margin-top: 50px;
+
+      a {
+        color: $white;
+        font-family: $roboto;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 22px;
+        text-transform: uppercase;
+      }
+    }
+
+    .views-field-field-post {
+      text-align: center;
+      opacity: 0.7;
+      color: $white;
+      font-family: $roboto;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 22px;
+      text-transform: uppercase;
+    }
+  }
+
+  &:after {
+    @include overlay($testimonials_top, $testimonials_height);
   }
 }
 
 #contact {
   height: $contact_height;
+  padding-left: 20%;
+  padding-right: 20%;
+  h2 {
+    color: $gray;
+    font-family: $playfair;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 70px 0 35px;
+
+  }
+  #block-contactblock {
+    max-width: 460px;
+    float: left;
+    #edit-field-email-0-value {
+      max-width: 460px;
+    }
+
+    input {
+      height: 45px;
+    }
+    textarea {
+      height: 200px;
+    }
+    input,
+    textarea {
+      box-shadow: none;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+
+      &::placeholder {
+        opacity: 0.5;
+        color: $gray;
+        font-family: $roboto;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+
+    input,
+    textarea {
+      padding: 15px;
+      outline-color: $color_1;
+    }
+
+    #edit-submit {
+      border-radius: 2px;
+      border: 1px solid #00e0d0;
+      position: static;
+      transform: none;
+      width: 120px;
+      height: 40px;
+      padding: 0;
+    }
+  }
+  #block-blockwithimage {
+    float: right;
+    padding-left: 100px;
+    @for $i from 1 through 10 {
+      .field__items:nth-child(#{$i}) {
+        background: url("../img/client-#{$i}.png") center center no-repeat;
+        background-size: contain;
+
+      }
+    }
+    .field__item {
+      width: 150px;
+      height: 50px;
+      img {
+      display: none;
+    }
+  }
+  }
 }
 
 footer {
   height: $footer_height;
   background: $footer_background center center;
 
-  #footer_overlay {
-    height: $footer_height;
+  &:after {
+    @include overlay($footer_top, $footer_height);
   }
 }

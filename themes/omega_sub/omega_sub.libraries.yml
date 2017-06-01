@@ -4,7 +4,7 @@ omega_sub:
     allow_enable_disable: true
     title: 'Default library for the omega_sub theme'
     description: 'Default Omega subtheme library description. Please provide a more meaningful description (and title) for this library by editing the omega_sub.libraries.yml file.'
-    scss: 
+    scss:
       style/css/omega_sub.css: 'style/scss/omega_sub.scss'
   version: VERSION
   js:
@@ -15,10 +15,9 @@ omega_sub:
     theme:
       style/css/bootstrap.css: {}
       style/css/omega_sub.css: {}
-    layout: 
+    layout:
       #style/css/layout/primary-layout.css: {}
     component:
       #style/css/components/some-component.css: {}
   dependencies:
     - core/jquery
-    

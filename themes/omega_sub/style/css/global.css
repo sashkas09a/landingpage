@@ -10,8 +10,22 @@
   font-family: 'Roboto';
   src: url("../fonts/roboto/Roboto-Regular.ttf"); }
 
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf"); }
+
+@font-face {
+  font-family: 'Hammersmith One';
+  src: url("../fonts/hammersmith-one/HammersmithOne.ttf"); }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Regular.ttf"); }
+
 a:hover {
   text-decoration: none !important; }
+  a:hover:hover {
+    cursor: pointer; }
 
 @-webkit-keyframes learn_more_button {
   0% {
@@ -31,7 +45,9 @@ a:hover {
     border-color: #ffffff;
     background: #00e0d0; } }
 
-.views-field-view-node span a {
+.view-footer a,
+.views-field-view-node span a,
+input[type="submit"] {
   color: #00e0d0;
   font-family: "Hammersmith One";
   font-size: 16px;
@@ -42,4 +58,9 @@ a:hover {
   padding: 10px 15px;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  border: 1px solid #00e0d0; }
+  border: 1px solid #00e0d0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  position: absolute; }

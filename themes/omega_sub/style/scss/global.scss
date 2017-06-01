@@ -1,13 +1,18 @@
 @import "variables.scss";
+@import "mixins.scss";
+
 a:hover {
   text-decoration: none !important;
+  &:hover {
+    cursor: pointer;
+  }
 }
-
 @keyframes learn_more_button {
   0% {
     color: $color_1;
     border-color: $color_1;
   }
+
   100% {
     color: $white;
     border-color: $white;
@@ -15,29 +20,20 @@ a:hover {
   }
 }
 // button "learn more"
-.views-field-view-node {
-  span a {
-    color: #00e0d0;
-    font-family: $hammersmith;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    position: absolute;
-    z-index: 500;
-    padding: 10px 15px;
-    border-radius: 2px;
-    border: 1px solid #00e0d0;
-  }
-}
 
-@mixin overlay($top) {
-  content: "";
-  display: block;
+.view-footer a,
+.views-field-view-node span a,
+input[type="submit"] {
+  color: $color_1;
+  font-family: $hammersmith;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
   position: absolute;
-  top: $top;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: $overlay_background;
-  opacity: 0.85;
+  z-index: 500;
+  padding: 10px 15px;
+  border-radius: 2px;
+  border: 1px solid #00e0d0;
+  @include left;
+  position: absolute;
 }
