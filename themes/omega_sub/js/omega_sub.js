@@ -1,10 +1,3 @@
-$('#video_popup').on('shown.bs.modal', function () {
-  $('#close')[0].play();
-})
-$('#video_popup').on('hidden.bs.modal', function () {
-  $('#close')[0].pause();
-})
-
 autoPlayYouTubeModal();
 
 //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG

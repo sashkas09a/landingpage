@@ -56,15 +56,18 @@ header {
       }
     }
   }
+
   #site-branding {
     margin-top: 0;
   }
+
   .site-name {
     position: absolute;
     top: 0;
     left: 20%;
     z-index: 1;
   }
+
   #block-sitebranding a {
     color: #18d9d2 !important;
     font-family: $roboto-thin;
@@ -73,6 +76,7 @@ header {
     text-transform: lowercase;
     opacity: 0.9;
     letter-spacing: -1px;
+
     &:before {
       content: '';
       display: block;
@@ -82,7 +86,6 @@ header {
       background: url("../img/small-logo.png") center center no-repeat;
       height: 50px;
       width: 50px;
-
     }
   }
 
@@ -551,7 +554,7 @@ header {
 
   .carousel-indicators {
     position: absolute;
-    top: 370px;
+    top: 330px;
     @include left;
     margin: 0 auto;
 
@@ -574,7 +577,7 @@ header {
 
   .carousel-control {
     position: absolute;
-    top: 387px;
+    top: 345px;
     z-index: 99;
   }
 
@@ -625,6 +628,21 @@ header {
       line-height: 22px;
       text-transform: uppercase;
     }
+  }
+
+  &:before {
+    content: '“';
+    position: relative;
+    top: 70px;
+    @include left;
+    left: 48.5%;
+    z-index: 999;
+    opacity: 0.9;
+    color: $white;
+    font-family: $playfair;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 22px;
   }
 
   &:after {

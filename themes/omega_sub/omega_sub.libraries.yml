@@ -10,7 +10,6 @@ omega_sub:
   js:
     js/jquery-3.2.1.min.js: {}
     js/bootstrap.js: {}
-    js/bootstrap.youtubepopup.js: {}
     js/omega_sub.js: {}
   css:
     theme:
