@@ -1,4 +1,4 @@
-uuid: c331149e-76c2-47bb-b944-aaeaf2594174
+uuid: 3e8c414f-9a8c-47cc-b334-2db34018ae0d
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - omega_sub
-_core:
-  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
-id: omega_sub_branding
+id: sitebranding
 theme: omega_sub
 region: header
-weight: -14
+weight: -13
 provider: null
 plugin: system_branding_block
 settings:
@@ -19,7 +17,12 @@ settings:
   label: 'Site branding'
   provider: system
   label_display: '0'
-  use_site_logo: true
-  use_site_name: false
+  use_site_logo: false
+  use_site_name: true
   use_site_slogan: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

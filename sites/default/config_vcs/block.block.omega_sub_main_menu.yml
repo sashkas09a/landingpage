@@ -13,7 +13,7 @@ _core:
 id: omega_sub_main_menu
 theme: omega_sub
 region: header
-weight: -15
+weight: -14
 provider: null
 plugin: 'system_menu_block:main'
 settings:
