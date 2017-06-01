@@ -56,6 +56,35 @@ header {
       }
     }
   }
+  #site-branding {
+    margin-top: 0;
+  }
+  .site-name {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    z-index: 1;
+  }
+  #block-sitebranding a {
+    color: #18d9d2 !important;
+    font-family: $roboto-thin;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: lowercase;
+    opacity: 0.9;
+    letter-spacing: -1px;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: -60px;
+      background: url("../img/small-logo.png") center center no-repeat;
+      height: 50px;
+      width: 50px;
+
+    }
+  }
 
   nav {
     text-align: right;
@@ -184,6 +213,7 @@ header {
       @media (min-width: 2000px) {
         left: 28%;
       }
+
       img {
         display: none;
       }
@@ -192,7 +222,6 @@ header {
     .views-field-view-node {
       span a {
         top: 210px;
-
       }
     }
   }
@@ -202,9 +231,11 @@ header {
   height: $video_height;
   background: $video_background center center;
   background-size: cover;
+
   .modal-dialog {
     width: 70%;
   }
+
   .play_button {
     background: transparent;
     position: relative;
@@ -340,11 +371,13 @@ header {
   height: $team_height;
   background: $forest_background center center;
   background-size: cover;
+
   .region-team {
     position: absolute;
     width: 100%;
     z-index: 999;
   }
+
   .view {
     z-index: 999;
     text-align: center;
@@ -371,6 +404,7 @@ header {
     text-align: center;
     display: flex;
     justify-content: center;
+
     .views-col {
       display: flex;
       justify-content: center;
@@ -379,6 +413,7 @@ header {
         width: 13% !important;
       }
     }
+
     .views-row {
       max-width: 220px;
       border: 1px solid $white;
@@ -492,7 +527,6 @@ header {
       .views-field-field-image {
         height: 200px;
         // max-width: 267px;
-
         img {
           display: none;
         }
@@ -602,6 +636,7 @@ header {
   height: $contact_height;
   padding-left: 15%;
   padding-right: 15%;
+
   h2 {
     color: $gray;
     font-family: $playfair;
@@ -609,11 +644,12 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     margin: 70px 0 35px;
-
   }
+
   #block-contactblock {
     max-width: 460px;
     float: left;
+
     #edit-field-email-0-value {
       max-width: 460px;
     }
@@ -621,9 +657,11 @@ header {
     input {
       height: 45px;
     }
+
     textarea {
       height: 200px;
     }
+
     input,
     textarea {
       box-shadow: none;
@@ -654,6 +692,7 @@ header {
       padding: 0;
     }
   }
+
   #block-blockwithimage {
     float: right;
     padding-left: 20px;
@@ -662,21 +701,23 @@ header {
       .field__item:nth-child(#{$i}) {
         background: url("../img/client-#{$i}.png") center center no-repeat;
         background-size: contain;
-
       }
     }
+
     .field__item {
       width: 150px;
       height: 50px;
       margin: 20px auto;
       float: left;
+
       img {
-      display: none;
+        display: none;
+      }
+
+      &:nth-child(2n) {
+        float: right;
+      }
     }
-    &:nth-child(2n) {
-      float: right;
-    }
-  }
   }
 }
 

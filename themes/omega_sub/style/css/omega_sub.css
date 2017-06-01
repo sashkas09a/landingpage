@@ -12,16 +12,8 @@
   src: url("../fonts/roboto/Roboto-Regular.ttf"); }
 
 @font-face {
-  font-family: 'Playfair Display';
-  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf"); }
-
-@font-face {
-  font-family: 'Hammersmith One';
-  src: url("../fonts/hammersmith-one/HammersmithOne.ttf"); }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/roboto/Roboto-Regular.ttf"); }
+  font-family: 'Roboto Thin';
+  src: url("../fonts/roboto/Roboto-Thin.ttf"); }
 
 @font-face {
   font-family: 'Playfair Display';
@@ -34,6 +26,26 @@
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/roboto/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Roboto Thin';
+  src: url("../fonts/roboto/Roboto-Thin.ttf"); }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf"); }
+
+@font-face {
+  font-family: 'Hammersmith One';
+  src: url("../fonts/hammersmith-one/HammersmithOne.ttf"); }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Roboto Thin';
+  src: url("../fonts/roboto/Roboto-Thin.ttf"); }
 
 a:hover {
   text-decoration: none !important; }
@@ -90,6 +102,10 @@ input[type="submit"] {
   font-family: 'Roboto';
   src: url("../fonts/roboto/Roboto-Regular.ttf"); }
 
+@font-face {
+  font-family: 'Roboto Thin';
+  src: url("../fonts/roboto/Roboto-Thin.ttf"); }
+
 .overlay {
   background: -webkit-gradient(linear, left top, right top, from(#09052f), to(#311d5e));
   background: -webkit-linear-gradient(left, #09052f 0%, #311d5e 100%);
@@ -142,6 +158,30 @@ header {
         background-image: -o-linear-gradient(left, #09052f 0%, #311d5e 100%);
         background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
         opacity: 0.85; }
+  header #site-branding {
+    margin-top: 0; }
+  header .site-name {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    z-index: 1; }
+  header #block-sitebranding a {
+    color: #18d9d2 !important;
+    font-family: "Roboto Thin";
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: lowercase;
+    opacity: 0.9;
+    letter-spacing: -1px; }
+    header #block-sitebranding a:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: -60px;
+      background: url("../img/small-logo.png") center center no-repeat;
+      height: 50px;
+      width: 50px; }
   header nav {
     text-align: right;
     margin-top: 20px;
