@@ -259,6 +259,8 @@ header {
   background: url("../img/video-bg.jpg") center center;
   -webkit-background-size: cover;
           background-size: cover; }
+  #video .modal-dialog {
+    width: 70%; }
   #video .play_button {
     background: transparent;
     position: relative;

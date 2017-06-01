@@ -202,7 +202,9 @@ header {
   height: $video_height;
   background: $video_background center center;
   background-size: cover;
-
+  .modal-dialog {
+    width: 70%;
+  }
   .play_button {
     background: transparent;
     position: relative;
