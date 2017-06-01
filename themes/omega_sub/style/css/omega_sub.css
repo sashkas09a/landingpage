@@ -223,7 +223,7 @@ header {
       text-transform: uppercase;
       position: absolute;
       top: -10px;
-      left: 560px; }
+      left: 45%; }
       #about #block-omega-sub-views-block-our-story-block-1-2 .views-field-title span a {
         color: #413d4b; }
     #about #block-omega-sub-views-block-our-story-block-1-2 .views-field-body {
@@ -235,17 +235,20 @@ header {
       line-height: 22px;
       position: absolute;
       top: 30px;
-      left: 560px;
+      left: 45%;
       max-width: 550px; }
     #about #block-omega-sub-views-block-our-story-block-1-2 .views-field-field-image {
       position: absolute;
-      left: 245px;
+      left: 20%;
       top: 0;
       width: 235px;
       height: 229px;
       background: url("../img/logo.png") center center;
       -webkit-background-size: cover;
               background-size: cover; }
+      @media (min-width: 2000px) {
+        #about #block-omega-sub-views-block-our-story-block-1-2 .views-field-field-image {
+          left: 28%; } }
       #about #block-omega-sub-views-block-our-story-block-1-2 .views-field-field-image img {
         display: none; }
     #about #block-omega-sub-views-block-our-story-block-1-2 .views-field-view-node span a {
@@ -412,7 +415,28 @@ header {
       text-transform: none;
       margin: 15px 0 60px; }
   #team .views-view-grid {
-    text-align: center; }
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #team .views-view-grid .views-col {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 20% !important; }
+      @media (min-width: 2000px) {
+        #team .views-view-grid .views-col {
+          width: 13% !important; } }
     #team .views-view-grid .views-row {
       max-width: 220px;
       border: 1px solid #ffffff; }
@@ -514,8 +538,7 @@ header {
     #works #block-views-block-our-works-block-1 .view-content .row-2 > .col-6 > .views-field-field-image {
       background-color: #b6b6b6; }
     #works #block-views-block-our-works-block-1 .view-content .views-field-field-image {
-      height: 200px;
-      max-width: 267px; }
+      height: 200px; }
       #works #block-views-block-our-works-block-1 .view-content .views-field-field-image img {
         display: none; }
 
@@ -620,8 +643,8 @@ header {
 
 #contact {
   height: 650px;
-  padding-left: 20%;
-  padding-right: 20%; }
+  padding-left: 15%;
+  padding-right: 15%; }
   #contact h2 {
     color: #413d4b;
     font-family: "Playfair Display";
@@ -688,52 +711,57 @@ header {
       padding: 0; }
   #contact #block-blockwithimage {
     float: right;
-    padding-left: 100px; }
-    #contact #block-blockwithimage .field__items:nth-child(1) {
+    padding-left: 20px;
+    width: 380px; }
+    #contact #block-blockwithimage .field__item:nth-child(1) {
       background: url("../img/client-1.png") center center no-repeat;
       -webkit-background-size: contain;
               background-size: contain; }
-    #contact #block-blockwithimage .field__items:nth-child(2) {
+    #contact #block-blockwithimage .field__item:nth-child(2) {
       background: url("../img/client-2.png") center center no-repeat;
       -webkit-background-size: contain;
               background-size: contain; }
-    #contact #block-blockwithimage .field__items:nth-child(3) {
+    #contact #block-blockwithimage .field__item:nth-child(3) {
       background: url("../img/client-3.png") center center no-repeat;
       -webkit-background-size: contain;
               background-size: contain; }
-    #contact #block-blockwithimage .field__items:nth-child(4) {
+    #contact #block-blockwithimage .field__item:nth-child(4) {
       background: url("../img/client-4.png") center center no-repeat;
       -webkit-background-size: contain;
               background-size: contain; }
-    #contact #block-blockwithimage .field__items:nth-child(5) {
+    #contact #block-blockwithimage .field__item:nth-child(5) {
       background: url("../img/client-5.png") center center no-repeat;
       -webkit-background-size: contain;
               background-size: contain; }
-    #contact #block-blockwithimage .field__items:nth-child(6) {
+    #contact #block-blockwithimage .field__item:nth-child(6) {
       background: url("../img/client-6.png") center center no-repeat;
       -webkit-background-size: contain;
               background-size: contain; }
-    #contact #block-blockwithimage .field__items:nth-child(7) {
+    #contact #block-blockwithimage .field__item:nth-child(7) {
       background: url("../img/client-7.png") center center no-repeat;
       -webkit-background-size: contain;
               background-size: contain; }
-    #contact #block-blockwithimage .field__items:nth-child(8) {
+    #contact #block-blockwithimage .field__item:nth-child(8) {
       background: url("../img/client-8.png") center center no-repeat;
       -webkit-background-size: contain;
               background-size: contain; }
-    #contact #block-blockwithimage .field__items:nth-child(9) {
+    #contact #block-blockwithimage .field__item:nth-child(9) {
       background: url("../img/client-9.png") center center no-repeat;
       -webkit-background-size: contain;
               background-size: contain; }
-    #contact #block-blockwithimage .field__items:nth-child(10) {
+    #contact #block-blockwithimage .field__item:nth-child(10) {
       background: url("../img/client-10.png") center center no-repeat;
       -webkit-background-size: contain;
               background-size: contain; }
     #contact #block-blockwithimage .field__item {
       width: 150px;
-      height: 50px; }
+      height: 50px;
+      margin: 20px auto;
+      float: left; }
       #contact #block-blockwithimage .field__item img {
         display: none; }
+      #contact #block-blockwithimage .field__item:nth-child(2n) {
+        float: right; }
 
 footer {
   height: 400px;
