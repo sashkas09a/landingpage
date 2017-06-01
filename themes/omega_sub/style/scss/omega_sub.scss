@@ -343,6 +343,7 @@ header {
   .region-team {
     position: absolute;
     width: 100%;
+    z-index: 999;
   }
   .view {
     z-index: 999;

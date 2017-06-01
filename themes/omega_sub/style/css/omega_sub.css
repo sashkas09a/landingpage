@@ -402,7 +402,8 @@ header {
           background-size: cover; }
   #team .region-team {
     position: absolute;
-    width: 100%; }
+    width: 100%;
+    z-index: 999; }
   #team .view {
     z-index: 999;
     text-align: center; }
