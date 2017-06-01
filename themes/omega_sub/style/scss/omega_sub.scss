@@ -2,6 +2,7 @@
 @import "variables.scss";
 @import "global.scss";
 @import "mixins.scss";
+@import "breakpoints.scss";
 
 .overlay {
   background: $overlay_background;
@@ -115,13 +116,13 @@ header {
           color: $white !important;
           font-weight: 900;
           letter-spacing: 0.25px;
+          &:hover {
+            animation: nav 1s ease both;
+            text-decoration: none !important;
+            cursor: pointer;
+          }
         }
 
-        a:hover {
-          text-decoration: none !important;
-          cursor: pointer;
-          color: $color_1 !important;
-        }
       }
     }
   }
@@ -412,7 +413,7 @@ header {
     .views-col {
       display: flex;
       justify-content: center;
-      width: 20% !important;
+      width: 20%;
       @media (min-width: 2000px) {
         width: 13% !important;
       }
@@ -682,6 +683,8 @@ header {
 
     textarea {
       height: 200px;
+      resize: none;
+      overflow: hidden;
     }
 
     input,
@@ -751,3 +754,4 @@ footer {
     @include overlay($footer_top, $footer_height);
   }
 }
+@import "breakpoints.scss";

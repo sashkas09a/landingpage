@@ -15,8 +15,18 @@ a:hover {
 
   100% {
     color: $white;
-    border-color: $white;
+    border-color: $color_1;
     background: $color_1;
+  }
+}
+
+@keyframes nav {
+  0% {
+    color: $white;
+  }
+
+  100% {
+    color: $color_1;
   }
 }
 // button "learn more"
@@ -34,6 +44,13 @@ input[type="submit"] {
   padding: 10px 15px;
   border-radius: 2px;
   border: 1px solid #00e0d0;
+  text-decoration: none !important;
+  cursor: pointer;
   @include left;
   position: absolute;
+  &:hover {
+    animation: learn_more_button 1s ease both;
+    text-decoration: none !important;
+    cursor: pointer;
+  }
 }

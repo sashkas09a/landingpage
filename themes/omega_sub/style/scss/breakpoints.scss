@@ -1,0 +1,70 @@
+@import "bootstrap.css";
+@import "variables.scss";
+@import "global.scss";
+@import "mixins.scss";
+
+@media (max-width: 1024px) {
+  header {
+    .views-field-title {
+      width: 80%;
+      text-align: center;
+    }
+    .views-field-body {
+      width: 90%;
+    }
+    #block-omega-sub-main-menu {
+      right: 2%;
+      top: 5px;
+    }
+    #name-slogan > div {
+      left: 10%;
+    }
+  }
+  #about {
+    .views-field-field-image {
+      left: 0% !important;
+    }
+    .views-field-view-node span a {
+      top: 260px !important;
+    }
+  }
+  #expertise {
+    padding: 0 2% !important;
+    .views-col {
+      padding: 0 10px !important;
+    }
+  }
+  #team {
+    .views-col {
+      width: 25% !important;
+      padding: 0 1%;
+    }
+  }
+  #works {
+    .view-footer a {
+      left: 43.5% !important;
+    }
+  }
+  #testimonials {
+    .views-field-body p {
+      margin: 0px 7% 10px;
+    }
+    .left {
+      left: 10%;
+    }
+    .right {
+      right: 10%;
+    }
+  }
+  #contact {
+    height: 1200px;
+    #block-blockwithimage {
+      float: left;
+    }
+  }
+  footer {
+    &:after {
+      top: 5600px;
+    }
+  }
+}

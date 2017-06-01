@@ -1,3 +1,20 @@
+@import url(bootstrap.css);
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf"); }
+
+@font-face {
+  font-family: 'Hammersmith One';
+  src: url("../fonts/hammersmith-one/HammersmithOne.ttf"); }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Roboto Thin';
+  src: url("../fonts/roboto/Roboto-Thin.ttf"); }
+
 @font-face {
   font-family: 'Playfair Display';
   src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf"); }
@@ -93,3 +110,56 @@ input[type="submit"] {
             animation: learn_more_button 1s ease both;
     text-decoration: none !important;
     cursor: pointer; }
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf"); }
+
+@font-face {
+  font-family: 'Hammersmith One';
+  src: url("../fonts/hammersmith-one/HammersmithOne.ttf"); }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Roboto Thin';
+  src: url("../fonts/roboto/Roboto-Thin.ttf"); }
+
+@media (max-width: 1024px) {
+  header .views-field-title {
+    width: 80%;
+    text-align: center; }
+  header .views-field-body {
+    width: 90%; }
+  header #block-omega-sub-main-menu {
+    right: 2%;
+    top: 5px; }
+  header #name-slogan > div {
+    left: 10%; }
+  #about .views-field-field-image {
+    left: 0% !important; }
+  #about .views-field-view-node span a {
+    top: 260px !important; }
+  #expertise {
+    padding: 0 2% !important; }
+    #expertise .views-col {
+      padding: 0 10px !important; }
+  #team .views-col {
+    width: 25% !important;
+    padding: 0 1%; }
+  #works .view-footer a {
+    left: 43.5% !important; }
+  #testimonials .views-field-body p {
+    margin: 0px 7% 10px; }
+  #testimonials .left {
+    left: 10%; }
+  #testimonials .right {
+    right: 10%; }
+  #contact {
+    height: 1200px; }
+    #contact #block-blockwithimage {
+      float: left; }
+  footer:after {
+    top: 5600px; } }
