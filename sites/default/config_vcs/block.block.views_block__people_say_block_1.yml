@@ -11,8 +11,8 @@ dependencies:
     - omega_sub
 id: views_block__people_say_block_1
 theme: omega_sub
-region: testimonials
-weight: 0
+region: quote
+weight: -14
 provider: null
 plugin: 'views_block:people_say-block_1'
 settings:

@@ -328,6 +328,7 @@ display:
       use_more_text: 'Learn more'
       link_url: ''
       link_display: '0'
+      css_class: slider-text
     cache_metadata:
       max-age: -1
       contexts:

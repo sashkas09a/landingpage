@@ -2,10 +2,7 @@ uuid: 3d13f37d-c287-48ac-b376-cf481399c6c7
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:footer_block_copyright_:38c020b3-fa0b-4b39-b401-bcf1f5707b07'
   module:
-    - block_content
     - system
   theme:
     - omega_sub

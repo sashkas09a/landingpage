@@ -2,10 +2,7 @@ uuid: c874311a-cd86-4868-a814-495fca8b2bf2
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:block_with_social_icons:195ec3cd-198c-40fc-bb61-881658cd359d'
   module:
-    - block_content
     - system
   theme:
     - omega_sub

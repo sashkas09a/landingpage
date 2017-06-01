@@ -309,13 +309,27 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: "EXPERTISE\nLorem ipsum doolor sit amet proim gravia nibh vel velit"
+          content: EXPERTISE
           plugin_id: text_custom
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<p id="test">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>'
+            format: full_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: expertise
     cache_metadata:
       max-age: -1
       contexts:
