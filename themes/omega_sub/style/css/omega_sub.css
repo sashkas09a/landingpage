@@ -400,6 +400,9 @@ header {
   background: url("../img/forest-bg.jpg") center center;
   -webkit-background-size: cover;
           background-size: cover; }
+  #team .region-team {
+    position: absolute;
+    width: 100%; }
   #team .view {
     z-index: 999;
     text-align: center; }

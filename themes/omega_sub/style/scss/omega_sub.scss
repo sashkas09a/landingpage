@@ -340,7 +340,10 @@ header {
   height: $team_height;
   background: $forest_background center center;
   background-size: cover;
-
+  .region-team {
+    position: absolute;
+    width: 100%;
+  }
   .view {
     z-index: 999;
     text-align: center;
