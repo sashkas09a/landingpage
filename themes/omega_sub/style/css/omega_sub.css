@@ -429,6 +429,10 @@ header {
     line-height: 22px;
     margin-bottom: 70px;
     line-height: 26px; }
+    @media (max-width: 1024px) {
+      #expertise .views-field-body {
+        max-width: 240px;
+        margin: 0 auto; } }
   #expertise .views-field-field-image:before {
     content: '';
     display: block;
@@ -910,7 +914,7 @@ footer {
         content: '';
         display: block;
         position: absolute;
-        top: 0px;
+        top: 0;
         left: -70px;
         background: url("../img/small-logo.png") center center no-repeat;
         height: 50px;
@@ -1069,7 +1073,7 @@ footer {
       footer #block-copyrightblockblockinfooter {
         left: 60%;
         top: 365px; } }
-  footer:after {
+  footer::after {
     content: "";
     display: block;
     position: absolute;
@@ -1083,11 +1087,12 @@ footer {
     background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
     opacity: 0.85; }
     @media (max-width: 1200px) {
-      footer:after {
+      footer::after {
         top: 5600px; } }
     @media (max-width: 1024px) {
-      footer:after {
-        height: 520px; } }
+      footer::after {
+        height: 520px;
+        height: 860px; } }
 
 @font-face {
   font-family: 'Playfair Display';
@@ -1220,7 +1225,7 @@ input[type="submit"] {
   #expertise {
     padding: 0 2% !important; }
     #expertise .views-col {
-      padding: 0 10px !important; }
+      padding: 10px 10px !important; }
   #team .views-col {
     padding: 0 1%; }
   #works .view-footer a {

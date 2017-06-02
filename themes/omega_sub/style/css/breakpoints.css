@@ -145,7 +145,7 @@ input[type="submit"] {
   #expertise {
     padding: 0 2% !important; }
     #expertise .views-col {
-      padding: 0 10px !important; }
+      padding: 10px 10px !important; }
   #team .views-col {
     padding: 0 1%; }
   #works .view-footer a {

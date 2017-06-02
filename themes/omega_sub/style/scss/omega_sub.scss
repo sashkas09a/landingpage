@@ -343,6 +343,10 @@ header {
     line-height: 22px;
     margin-bottom: 70px;
     line-height: 26px;
+    @media (max-width: 1024px) {
+      max-width: 240px;
+      margin: 0 auto;
+    }
   }
 
   .views-field-field-image {
@@ -807,7 +811,7 @@ footer {
         content: '';
         display: block;
         position: absolute;
-        top: 0px;
+        top: 0;
         left: -70px;
         background: url("../img/small-logo.png") center center no-repeat;
         height: 50px;
@@ -826,7 +830,6 @@ footer {
       top: 140px;
       left: -70px;
       z-index: 999;
-
     }
   }
 
@@ -974,19 +977,21 @@ footer {
       left: 75%;
       top: 295px;
     }
+
     @media (max-width: 912px) {
       left: 60%;
       top: 365px;
     }
   }
 
-  &:after {
+  &::after {
     @include overlay($footer_top, $footer_height);
     @media (max-width: 1200px) {
       top: 5600px;
     }
     @media (max-width: 1024px) {
       height: 520px;
+      height: 860px;
     }
   }
 }
