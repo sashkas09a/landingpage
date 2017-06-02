@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url(bootstrap.css);
 @import url(bootstrap.css);
-@import url(bootstrap.css);
 @font-face {
   font-family: 'Playfair Display';
   src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf"); }
@@ -263,7 +262,6 @@ input[type="submit"] {
     #expertise .views-col {
       padding: 0 10px !important; }
   #team .views-col {
-    width: 25% !important;
     padding: 0 1%; }
   #works .view-footer a {
     left: 43.5% !important; }
@@ -656,10 +654,16 @@ header {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
-      width: 20%; }
-      @media (min-width: 2000px) {
+      width: 20% !important; }
+      @media (min-width: 1600px) {
         #team .views-view-grid .views-col {
-          width: 13% !important; } }
+          width: 15% !important; } }
+      @media (min-width: 2200px) {
+        #team .views-view-grid .views-col {
+          width: 10%  !important; } }
+      @media (max-width: 1200px) {
+        #team .views-view-grid .views-col {
+          width: 25%  !important; } }
     #team .views-view-grid .views-row {
       max-width: 220px;
       border: 1px solid #ffffff; }
@@ -1022,153 +1026,3 @@ footer {
     background-image: -o-linear-gradient(left, #09052f 0%, #311d5e 100%);
     background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
     opacity: 0.85; }
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf"); }
-
-@font-face {
-  font-family: 'Hammersmith One';
-  src: url("../fonts/hammersmith-one/HammersmithOne.ttf"); }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/roboto/Roboto-Regular.ttf"); }
-
-@font-face {
-  font-family: 'Roboto Thin';
-  src: url("../fonts/roboto/Roboto-Thin.ttf"); }
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf"); }
-
-@font-face {
-  font-family: 'Hammersmith One';
-  src: url("../fonts/hammersmith-one/HammersmithOne.ttf"); }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/roboto/Roboto-Regular.ttf"); }
-
-@font-face {
-  font-family: 'Roboto Thin';
-  src: url("../fonts/roboto/Roboto-Thin.ttf"); }
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf"); }
-
-@font-face {
-  font-family: 'Hammersmith One';
-  src: url("../fonts/hammersmith-one/HammersmithOne.ttf"); }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/roboto/Roboto-Regular.ttf"); }
-
-@font-face {
-  font-family: 'Roboto Thin';
-  src: url("../fonts/roboto/Roboto-Thin.ttf"); }
-
-a:hover {
-  text-decoration: none !important; }
-  a:hover:hover {
-    cursor: pointer; }
-
-@keyframes learn_more_button {
-  0% {
-    color: #00e0d0;
-    border-color: #00e0d0; }
-  100% {
-    color: #ffffff;
-    border-color: #00e0d0;
-    background: #00e0d0; } }
-
-@keyframes nav {
-  0% {
-    color: #ffffff; }
-  100% {
-    color: #00e0d0; } }
-
-.view-footer a,
-.views-field-view-node span a,
-input[type="submit"] {
-  color: #00e0d0;
-  font-family: "Hammersmith One";
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: absolute;
-  z-index: 500;
-  padding: 10px 15px;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-  border: 1px solid #00e0d0;
-  text-decoration: none !important;
-  cursor: pointer;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-      -ms-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-  position: absolute; }
-  .view-footer a:hover,
-  .views-field-view-node span a:hover,
-  input[type="submit"]:hover {
-    -webkit-animation: learn_more_button 1s ease both;
-            animation: learn_more_button 1s ease both;
-    text-decoration: none !important;
-    cursor: pointer; }
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf"); }
-
-@font-face {
-  font-family: 'Hammersmith One';
-  src: url("../fonts/hammersmith-one/HammersmithOne.ttf"); }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/roboto/Roboto-Regular.ttf"); }
-
-@font-face {
-  font-family: 'Roboto Thin';
-  src: url("../fonts/roboto/Roboto-Thin.ttf"); }
-
-@media (max-width: 1024px) {
-  header .views-field-title {
-    width: 80%;
-    text-align: center; }
-  header .views-field-body {
-    width: 90%; }
-  header #block-omega-sub-main-menu {
-    right: 2%;
-    top: 5px; }
-  header #name-slogan > div {
-    left: 10%; }
-  #about .views-field-field-image {
-    left: 0% !important; }
-  #about .views-field-view-node span a {
-    top: 260px !important; }
-  #expertise {
-    padding: 0 2% !important; }
-    #expertise .views-col {
-      padding: 0 10px !important; }
-  #team .views-col {
-    width: 25% !important;
-    padding: 0 1%; }
-  #works .view-footer a {
-    left: 43.5% !important; }
-  #testimonials .views-field-body p {
-    margin: 0px 7% 10px; }
-  #testimonials .left {
-    left: 10%; }
-  #testimonials .right {
-    right: 10%; }
-  #contact {
-    height: 1200px; }
-    #contact #block-blockwithimage {
-      float: left; }
-  footer:after {
-    top: 5600px; } }
