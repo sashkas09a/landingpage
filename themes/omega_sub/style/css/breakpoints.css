@@ -127,7 +127,7 @@ input[type="submit"] {
   font-family: 'Roboto Thin';
   src: url("../fonts/roboto/Roboto-Thin.ttf"); }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   header .views-field-title {
     width: 80%;
     text-align: center; }
@@ -159,6 +159,6 @@ input[type="submit"] {
   #contact {
     height: 1200px; }
     #contact #block-blockwithimage {
-      float: left; }
+      float: left !important; }
   footer:after {
     top: 5600px; } }

@@ -3,7 +3,7 @@
 @import "global.scss";
 @import "mixins.scss";
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   header {
     .views-field-title {
       width: 80%;
@@ -59,7 +59,7 @@
   #contact {
     height: 1200px;
     #block-blockwithimage {
-      float: left;
+      float: left !important;
     }
   }
   footer {
@@ -67,4 +67,5 @@
       top: 5600px;
     }
   }
+  $contact_height: 1200px;
 }

@@ -12,7 +12,7 @@ dependencies:
 id: omega_sub_views_block__we_are_awesome_view_block_1
 theme: omega_sub
 region: slider
-weight: -14
+weight: -13
 provider: null
 plugin: 'views_block:we_are_awesome_view-block_1'
 settings:

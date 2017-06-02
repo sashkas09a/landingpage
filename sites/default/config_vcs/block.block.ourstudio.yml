@@ -1,25 +1,25 @@
-uuid: 1505eaa3-f54f-42e1-bd1c-2931ef7dd606
+uuid: 5803e629-3d8d-4cf4-aa95-7ee5a9cc3c39
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:block_with_text_and_image:37200542-c989-4cb2-a006-d55b358ee7af'
+    - 'block_content:block_our_studio:fd1f2cc7-0a19-4a11-910d-795a0cf500ba'
   module:
     - block_content
     - system
   theme:
     - omega_sub
-id: blockwithtextandimage
+id: ourstudio
 theme: omega_sub
 region: footer
-weight: -13
+weight: 0
 provider: null
-plugin: 'block_content:37200542-c989-4cb2-a006-d55b358ee7af'
+plugin: 'block_content:fd1f2cc7-0a19-4a11-910d-795a0cf500ba'
 settings:
-  id: 'block_content:37200542-c989-4cb2-a006-d55b358ee7af'
-  label: 'Block with text and image'
+  id: 'block_content:fd1f2cc7-0a19-4a11-910d-795a0cf500ba'
+  label: 'OUR STUDIO'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full

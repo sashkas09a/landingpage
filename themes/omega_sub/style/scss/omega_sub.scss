@@ -2,7 +2,6 @@
 @import "variables.scss";
 @import "global.scss";
 @import "mixins.scss";
-@import "breakpoints.scss";
 
 .overlay {
   background: $overlay_background;
@@ -47,6 +46,7 @@ header {
 
     .carousel-inner {
       height: 100%;
+
       .item {
         height: $header_height !important;
         background: $forest_background center center;
@@ -116,13 +116,13 @@ header {
           color: $white !important;
           font-weight: 900;
           letter-spacing: 0.25px;
+
           &:hover {
             animation: nav 1s ease both;
             text-decoration: none !important;
             cursor: pointer;
           }
         }
-
       }
     }
   }
@@ -418,12 +418,12 @@ header {
         width: 15% !important;
       }
       @media (min-width: 2200px) {
-        width: 10%  !important;
+        width: 10% !important;
       }
       @media (max-width: 1200px) {
-        width: 25%  !important;
+        width: 25% !important;
       }
-        }
+    }
 
     .views-row {
       max-width: 220px;
@@ -548,10 +548,12 @@ header {
 
 #testimonials {
   height: $testimonials_height;
-  background: $forest_background center center;
+  background: $forest_background center center no-repeat;
+  background-size: cover;
 
   .carousel-inner {
     z-index: 500;
+
     .item {
       height: 230px !important;
     }
@@ -665,6 +667,9 @@ header {
   height: $contact_height;
   padding-left: 15%;
   padding-right: 15%;
+  @media (max-width: 1200px) {
+    height: 1200px !important;
+  }
 
   h2 {
     color: $gray;
@@ -749,14 +754,240 @@ header {
         float: right;
       }
     }
+    @media (max-width: 1200px) {
+      float: left !important;
+    }
   }
 }
 
 footer {
   height: $footer_height;
-  background: $footer_background center center;
+  background: $footer_background center center no-repeat;
+  background-size: cover;
+  padding: 0 15%;
+  @media (max-width: 1200px) {
+    padding: 0 2%;
+  }
+  @media (max-width: 1024px) {
+    height: 520px;
+  }
+
+  .region-footer {
+    height: 400px;
+  }
+
+  h2 {
+    color: $white;
+    font-family: $roboto;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  #block-footer1 {
+    z-index: 99;
+    margin-left: 70px;
+
+    .field--name-field-footer-header {
+      color: #18d9d2 !important;
+      font-family: $roboto-thin;
+      font-size: 30px;
+      font-weight: 300;
+      text-transform: lowercase;
+      opacity: 0.9;
+      letter-spacing: -1px;
+      display: inline-block;
+      position: absolute;
+      margin-top: 80px;
+      z-index: 99;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: -70px;
+        background: url("../img/small-logo.png") center center no-repeat;
+        height: 50px;
+        width: 50px;
+      }
+    }
+
+    .field--name-body p {
+      color: $white;
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 26px;
+      max-width: 300px;
+      position: relative;
+      top: 140px;
+      left: -70px;
+      z-index: 999;
+
+    }
+  }
+
+  #block-ourstudio {
+    z-index: 99;
+    position: relative;
+    left: 40%;
+    top: -70px;
+    max-width: 300px;
+    @media (max-width: 1024px) {
+      left: 60%;
+    }
+
+    .field--name-body p:nth-child(2) {
+      display: none;
+    }
+
+    .field--name-body p,
+    .field--name-field-phone {
+      color: $white;
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 26px;
+    }
+
+    .field--name-body:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 45px;
+      left: -50px;
+      background: url("../img/footer-location-icon.png") center center no-repeat;
+      height: 50px;
+      width: 50px;
+    }
+
+    .field--name-field-phone:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 130px;
+      left: -50px;
+      background: url("../img/footer-phone-icon.png") center center no-repeat;
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  #block-contactblock-2 {
+    position: relative;
+    z-index: 99;
+    top: -260px;
+    right: -74%;
+    @media (max-width: 1200px) {
+      right: -70%;
+    }
+    @media (max-width: 1024px) {
+      right: 0;
+      top: 0;
+    }
+    max-width: 300px;
+
+    h2 {
+      margin-bottom: 33px;
+      margin-left: 3px;
+    }
+
+    input[type="email"] {
+      max-width: 210px;
+      height: 45px;
+      border: 1px solid $white;
+      opacity: 0.5;
+      background: transparent;
+      padding: 15px;
+      outline: none;
+      color: $white;
+
+      &::placeholder {
+        opacity: 0.75;
+        color: $white;
+        font-family: $roboto;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 26px;
+      }
+    }
+
+    input[type="submit"] {
+      width: 70px;
+      height: 45px;
+      border: 1px solid $white;
+      background: $white;
+      opacity: 0.5;
+      position: relative;
+      top: -59px;
+      left: 260px;
+      color: $white;
+      border-radius: 0;
+
+      &:hover {
+        animation: none;
+      }
+    }
+  }
+
+  #block-footernav {
+    z-index: 9;
+    position: relative;
+    top: -180px;
+    left: -10px;
+    @media (max-width: 1024px) {
+      top: -110px;
+      left: 375px;
+      display: inline-block;
+    }
+
+    .field__item {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    a {
+      color: $white;
+      font-family: $roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+  }
+
+  #block-copyrightblockblockinfooter {
+    color: $white;
+    font-family: $roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    z-index: 99;
+    display: inline-block;
+    position: relative;
+    left: 80%;
+    top: 235px;
+    @media (max-width: 1024px) {
+      left: 75%;
+      top: 295px;
+    }
+    @media (max-width: 912px) {
+      left: 60%;
+      top: 365px;
+    }
+  }
 
   &:after {
     @include overlay($footer_top, $footer_height);
+    @media (max-width: 1200px) {
+      top: 5600px;
+    }
+    @media (max-width: 1024px) {
+      height: 520px;
+    }
   }
 }
+@import "breakpoints.scss";

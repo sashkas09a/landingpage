@@ -1,19 +1,22 @@
-uuid: 3d13f37d-c287-48ac-b376-cf481399c6c7
+uuid: 0fb20a46-57ba-4914-98d2-c7627bac7d70
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:footer_block_copyright_:dbe9689f-9905-41ac-8983-20258f373152'
   module:
+    - block_content
     - system
   theme:
     - omega_sub
 id: copyrightblockblockinfooter
 theme: omega_sub
 region: footer
-weight: -10
+weight: -11
 provider: null
-plugin: 'block_content:38c020b3-fa0b-4b39-b401-bcf1f5707b07'
+plugin: 'block_content:dbe9689f-9905-41ac-8983-20258f373152'
 settings:
-  id: 'block_content:38c020b3-fa0b-4b39-b401-bcf1f5707b07'
+  id: 'block_content:dbe9689f-9905-41ac-8983-20258f373152'
   label: 'Copyright block - block in footer'
   provider: block_content
   label_display: '0'

@@ -1,0 +1,26 @@
+uuid: f3bc3ee0-4639-45a4-9d43-331e7a1815cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icons
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.icons.body
+field_name: body
+entity_type: block_content
+bundle: icons
+label: Body
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    summary: ''
+    value: "<p>&lt;a&gt;&lt;span class=\"glyphicon glyphicon-menu-left\"&gt;&lt;/span&gt;&lt;/a&gt;</p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

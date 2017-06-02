@@ -1,0 +1,21 @@
+uuid: 28cac423-48cf-4ed5-a80d-048311ac3ade
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icons
+    - field.field.block_content.icons.body
+  module:
+    - text
+id: block_content.icons.default
+targetEntityType: block_content
+bundle: icons
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
