@@ -1,7 +1,7 @@
-@import "bootstrap.css";
-@import "variables.scss";
-@import "global.scss";
-@import "mixins.scss";
+@import 'bootstrap.css';
+@import 'variables';
+@import 'global';
+@import 'mixins';
 
 .overlay {
   background: $overlay_background;
@@ -11,20 +11,21 @@
   left: 0;
   width: 100%;
 }
-// temporary
-
-body {
-  padding-top: 0;
-}
 // overwrite theme's demo regions display
 
 #block-omega-sub-branding,
 .messages--warning,
-.theme-demo-block,
-.toolbar-bar {
+.theme-demo-block {
   display: none !important;
 }
-
+#toolbar-administration {
+  position: relative;
+}
+.toolbar {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+}
 #about,
 #contact,
 #expertise,
@@ -35,9 +36,9 @@ body {
 header {
   height: $header_height;
   position: relative;
-
+  // padding-top: 30px;
   .carousel {
-    height: $header_height;
+    height: $header_height - 30px;
 
     .carousel-indicators .active {
       background: $color_1;
@@ -65,7 +66,7 @@ header {
 
   .site-name {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 20%;
     z-index: 1;
   }
@@ -93,7 +94,7 @@ header {
 
   nav {
     text-align: right;
-    margin-top: 20px;
+    margin-top: 30px;
     position: absolute !important;
     top: 0;
     right: 20%;
@@ -312,16 +313,16 @@ header {
       text-transform: none;
       margin: 20px 0;
 
-      &:after {
-        content: '';
-        width: 50px;
-        height: 2px;
-        background-color: #413d4b;
-        opacity: 0.3;
-        position: absolute;
-        top: 100px;
-        @include left;
-      }
+      // &:after {
+      //   content: '';
+      //   width: 50px;
+      //   height: 2px;
+      //   background-color: #413d4b;
+      //   opacity: 0.3;
+      //   position: absolute;
+      //   top: 1800px;
+      //   @include left;
+      // }
     }
   }
 
@@ -592,18 +593,20 @@ header {
     }
   }
 
-  .carousel-control {
+  .slide_buttons {
+    z-index: 999;
+    position: relative;
+    color: #fff;
+    top: 50px;
+  }
+  .slide_left {
+    left: 35%;
+  }
+
+  .slide_right {
+    right: 35%;
     position: absolute;
-    top: 345px;
-    z-index: 99;
-  }
-
-  .left {
-    left: 28%;
-  }
-
-  .right {
-    right: 28%;
+    top: 4305px;
   }
 
   #block-views-block-people-say-block-1 {
@@ -977,7 +980,6 @@ footer {
       left: 75%;
       top: 295px;
     }
-
     @media (max-width: 912px) {
       left: 60%;
       top: 365px;

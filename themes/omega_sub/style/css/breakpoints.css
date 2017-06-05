@@ -152,9 +152,9 @@ input[type="submit"] {
     left: 43.5% !important; }
   #testimonials .views-field-body p {
     margin: 0px 7% 10px; }
-  #testimonials .left {
+  #testimonials .slide_left {
     left: 10%; }
-  #testimonials .right {
+  #testimonials .slide_right {
     right: 10%; }
   #contact {
     height: 1200px; }
