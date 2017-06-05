@@ -145,12 +145,9 @@ input[type="submit"] {
 .theme-demo-block {
   display: none !important; }
 
-#toolbar-administration {
-  position: relative; }
-
 .toolbar {
-  position: absolute;
-  z-index: 99;
+  position: fixed;
+  z-index: 600;
   width: 100%; }
 
 #about,
@@ -191,7 +188,7 @@ header {
     margin-top: 0; }
   header .site-name {
     position: absolute;
-    top: 5px;
+    top: 10px;
     left: 20%;
     z-index: 1; }
   header #block-sitebranding a {
@@ -213,7 +210,7 @@ header {
       width: 50px; }
   header nav {
     text-align: right;
-    margin-top: 30px;
+    margin-top: 35px;
     position: absolute !important;
     top: 0;
     right: 20%;
