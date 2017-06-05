@@ -9,42 +9,48 @@ use Drupal\Core\Form\FormStateInterface;
 function helloworld_form_alter(&$form, $form_state, $form_id) {
 
   if ($form_id == 'contact_message_feedback_form') {
-  $form['actions']['preview']['#access'] = FALSE;
+    $form['actions']['preview']['#access'] = FALSE;
   	$form['actions']['submit']['#value'] = 'SUBMIT';
+    $form['actions']['submit']['#ajax'] = array(
+      'wrapper' => 'form_wrapper',
+      'callback' => 'custom_callback',
+      'event' => 'click',
+      'progress' => [
+      'type' => 'throbber',
+      'message' => 'Veryfieng'],
+);
+    $form['test_selection'] = [
+      '#type' => 'hidden', 
+      '#prefix' => '<div id="form_wrapper">',
+      '#suffix' => '</div>',
+      '#weight' => 1,
+    ];
+    
   	$form['field_email']['widget']['0']['value']['#placeholder'] = 'Email';
   	$form['field_email']['widget']['0']['value']['#title'] = FALSE;
   	$form['field_name']['widget']['0']['value']['#placeholder'] = 'Name';
-  	$form['field_name']['widget']['0']['value']['#title'] = FALSE;
+    $form['field_name']['widget']['0']['value']['#title'] = FALSE;
   	$form['subject']['widget']['0']['value']['#placeholder'] = 'Subject';
-  	$form['subject']['widget']['0']['value']['#required'] = 0;
+  	$form['subject']['widget']['0']['value']['#required'] = 1;
   	$form['subject']['widget']['0']['value']['#title'] = FALSE;
   	$form['message']['widget']['0']['value']['#placeholder'] = 'Your Message';
-  	$form['message']['widget']['0']['value']['#required'] = 0;
+  	$form['message']['widget']['0']['value']['#required'] = 1;
   	$form['message']['widget']['0']['value']['#title'] = FALSE;
-  	//$form['message']['widget']['0']['value']['#placeholder'] = 'Your Message';
-// dsm($form);
-}
+  }
   
-
-
-
-
-//   if ($form_id == 'user_login_form') {
-//   	$form['name']['#attributes']['placeholder'] = 'test';
-// }
-  
-
-
-
-
-
-
   if ($form_id == 'contact_message_stay_in_touch_form') {
-  	 $form['actions']['preview']['#access'] = FALSE;
-  	 $form['actions']['submit']['#value'] = 'IMAGE';
-  	 $form['field_email']['widget']['0']['value']['#placeholder'] = 'Subscribe our newsletter';
-  	 $form['field_email']['widget']['0']['value']['#title'] = FALSE;
-
-  // dsm($form);
+  	$form['actions']['preview']['#access'] = FALSE;
+  	$form['actions']['submit']['#value'] = "<img src='/home/user/Загрузки/paper122.png'></img>";
+  	$form['field_email']['widget']['0']['value']['#placeholder'] = 'Subscribe our newsletter';
+  	$form['field_email']['widget']['0']['value']['#title'] = FALSE;
   }
 }
+
+function custom_callback() {
+  $output = array();
+
+  $output['#markup'] = 'Thank you! Your message has been sent!';
+
+  return $output;
+}
+
