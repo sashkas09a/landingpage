@@ -23,7 +23,7 @@
 
 .toolbar {
   position: fixed;
-  z-index: 600;
+  z-index: 9999;
   width: 100%;
 }
 #about,
@@ -836,7 +836,7 @@ footer {
     }
   }
 
-  #block-ourstudio {
+  #block-ourstudioblockwithcontactsinfooter {
     z-index: 99;
     position: relative;
     left: 40%;

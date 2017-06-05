@@ -147,7 +147,7 @@ input[type="submit"] {
 
 .toolbar {
   position: fixed;
-  z-index: 600;
+  z-index: 9999;
   width: 100%; }
 
 #about,
@@ -922,25 +922,25 @@ footer {
       top: 140px;
       left: -70px;
       z-index: 999; }
-  footer #block-ourstudio {
+  footer #block-ourstudioblockwithcontactsinfooter {
     z-index: 99;
     position: relative;
     left: 40%;
     top: -70px;
     max-width: 300px; }
     @media (max-width: 1024px) {
-      footer #block-ourstudio {
+      footer #block-ourstudioblockwithcontactsinfooter {
         left: 60%; } }
-    footer #block-ourstudio .field--name-body p:nth-child(2) {
+    footer #block-ourstudioblockwithcontactsinfooter .field--name-body p:nth-child(2) {
       display: none; }
-    footer #block-ourstudio .field--name-body p,
-    footer #block-ourstudio .field--name-field-phone {
+    footer #block-ourstudioblockwithcontactsinfooter .field--name-body p,
+    footer #block-ourstudioblockwithcontactsinfooter .field--name-field-phone {
       color: #ffffff;
       font-family: "Roboto";
       font-size: 14px;
       font-weight: 300;
       line-height: 26px; }
-    footer #block-ourstudio .field--name-body:before {
+    footer #block-ourstudioblockwithcontactsinfooter .field--name-body:before {
       content: '';
       display: block;
       position: absolute;
@@ -949,7 +949,7 @@ footer {
       background: url("../img/footer-location-icon.png") center center no-repeat;
       height: 50px;
       width: 50px; }
-    footer #block-ourstudio .field--name-field-phone:before {
+    footer #block-ourstudioblockwithcontactsinfooter .field--name-field-phone:before {
       content: '';
       display: block;
       position: absolute;
