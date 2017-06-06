@@ -2,14 +2,17 @@ uuid: 5d6ef6da-e4e3-48d6-b58c-e4384fb5579a
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:footer_block_links:4352dbc8-859f-40da-9a73-4c536565a7c0'
   module:
+    - block_content
     - system
   theme:
     - omega_sub
 id: footernav
 theme: omega_sub
 region: footer
-weight: -8
+weight: -9
 provider: null
 plugin: 'block_content:4352dbc8-859f-40da-9a73-4c536565a7c0'
 settings:

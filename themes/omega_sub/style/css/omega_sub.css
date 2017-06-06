@@ -167,10 +167,23 @@ header {
     header .carousel .carousel-inner {
       height: 100%; }
       header .carousel .carousel-inner .item {
-        height: 670px !important;
-        background: url("../img/forest-bg.jpg") center center;
-        -webkit-background-size: cover;
-                background-size: cover; }
+        height: 670px !important; }
+        header .carousel .carousel-inner .item:nth-child(1) {
+          background: url("../img/header-bg-1.jpg") center center no-repeat;
+          -webkit-background-size: cover;
+                  background-size: cover; }
+        header .carousel .carousel-inner .item:nth-child(2) {
+          background: url("../img/header-bg-2.jpg") center center no-repeat;
+          -webkit-background-size: cover;
+                  background-size: cover; }
+        header .carousel .carousel-inner .item:nth-child(3) {
+          background: url("../img/header-bg-3.jpg") center center no-repeat;
+          -webkit-background-size: cover;
+                  background-size: cover; }
+        header .carousel .carousel-inner .item:nth-child(4) {
+          background: url("../img/header-bg-4.jpg") center center no-repeat;
+          -webkit-background-size: cover;
+                  background-size: cover; }
         header .carousel .carousel-inner .item > :after {
           content: "";
           display: block;
@@ -273,7 +286,8 @@ header {
   z-index: 500;
   text-align: center; }
 
-#block-omega-sub-views-block-we-are-awesome-view-block-1 .views-field-view-node span a {
+#block-omega-sub-views-block-we-are-awesome-view-block-1 .view-footer a {
+  position: absolute;
   top: 445px; }
 
 #about {
@@ -294,6 +308,7 @@ header {
       #about #block-omega-sub-views-block-our-story-block-1-2 .views-field-title span a {
         color: #413d4b; }
     #about #block-omega-sub-views-block-our-story-block-1-2 .views-field-body {
+      display: none;
       opacity: 0.75;
       color: #413d4b;
       font-family: "Roboto";
@@ -318,7 +333,7 @@ header {
           left: 28%; } }
       #about #block-omega-sub-views-block-our-story-block-1-2 .views-field-field-image img {
         display: none; }
-    #about #block-omega-sub-views-block-our-story-block-1-2 .views-field-view-node span a {
+    #about #block-omega-sub-views-block-our-story-block-1-2 #loadMore {
       top: 210px; }
 
 #video {
@@ -327,7 +342,22 @@ header {
   -webkit-background-size: cover;
           background-size: cover; }
   #video .modal-dialog {
-    width: 70%; }
+    margin-top: 7%;
+    width: 80% !important; }
+    #video .modal-dialog .modal-content {
+      border: 0;
+      -webkit-border-radius: 0;
+              border-radius: 0; }
+    #video .modal-dialog .modal-body {
+      padding: 0; }
+      #video .modal-dialog .modal-body button {
+        color: #000;
+        opacity: 0.6;
+        margin-right: 10px;
+        outline: none; }
+    #video .modal-dialog iframe {
+      width: 100%;
+      margin-bottom: -5px; }
   #video .play_button {
     background: transparent;
     position: relative;
@@ -489,6 +519,22 @@ header {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    #team .views-view-grid .col-1 > .views-row > .views-field-field-image {
+      background: url("../img/team-member-1.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
+    #team .views-view-grid .col-2 > .views-row > .views-field-field-image {
+      background: url("../img/team-member-2.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
+    #team .views-view-grid .col-3 > .views-row > .views-field-field-image {
+      background: url("../img/team-member-3.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
+    #team .views-view-grid .col-4 > .views-row > .views-field-field-image {
+      background: url("../img/team-member-4.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #team .views-view-grid .views-col {
       display: -webkit-box;
       display: -webkit-flex;
@@ -585,29 +631,53 @@ header {
   #works #block-views-block-our-works-block-1 .view-content {
     padding-top: 90px; }
     #works #block-views-block-our-works-block-1 .view-content .row-1 > .col-1 > .views-field-field-image {
-      background-color: #b6b6b6; }
+      background: url("../img/works-1.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #works #block-views-block-our-works-block-1 .view-content .row-1 > .col-2 > .views-field-field-image {
-      background-color: #acacac; }
+      background: url("../img/works-2.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #works #block-views-block-our-works-block-1 .view-content .row-1 > .col-3 > .views-field-field-image {
-      background-color: #a1a1a1; }
+      background: url("../img/works-3.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #works #block-views-block-our-works-block-1 .view-content .row-1 > .col-4 > .views-field-field-image {
-      background-color: #909090; }
+      background: url("../img/works-4.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #works #block-views-block-our-works-block-1 .view-content .row-1 > .col-5 > .views-field-field-image {
-      background-color: #bababa; }
+      background: url("../img/works-5.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #works #block-views-block-our-works-block-1 .view-content .row-1 > .col-6 > .views-field-field-image {
-      background-color: #a9a9a9; }
+      background: url("../img/works-6.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #works #block-views-block-our-works-block-1 .view-content .row-2 > .col-1 > .views-field-field-image {
-      background-color: #a9a9a9; }
+      background: url("../img/works-7.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #works #block-views-block-our-works-block-1 .view-content .row-2 > .col-2 > .views-field-field-image {
-      background-color: #bababa; }
+      background: url("../img/works-8.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #works #block-views-block-our-works-block-1 .view-content .row-2 > .col-3 > .views-field-field-image {
-      background-color: #909090; }
+      background: url("../img/works-9.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #works #block-views-block-our-works-block-1 .view-content .row-2 > .col-4 > .views-field-field-image {
-      background-color: #a1a1a1; }
+      background: url("../img/works-10.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #works #block-views-block-our-works-block-1 .view-content .row-2 > .col-5 > .views-field-field-image {
-      background-color: #acacac; }
+      background: url("../img/works-11.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #works #block-views-block-our-works-block-1 .view-content .row-2 > .col-6 > .views-field-field-image {
-      background-color: #b6b6b6; }
+      background: url("../img/works-12.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+              background-size: cover; }
     #works #block-views-block-our-works-block-1 .view-content .views-field-field-image {
       height: 200px; }
       #works #block-views-block-our-works-block-1 .view-content .views-field-field-image img {
@@ -754,6 +824,8 @@ header {
     float: left; }
     #contact #block-contactblock #edit-field-email-0-value {
       max-width: 460px; }
+    #contact #block-contactblock label {
+      display: none; }
     #contact #block-contactblock input {
       height: 45px; }
     #contact #block-contactblock textarea {
@@ -870,7 +942,8 @@ footer {
   background: url("../img/footer-bg.jpg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
-  padding: 0 15%; }
+  padding: 0 15%;
+  margin-bottom: -1px; }
   @media (max-width: 1200px) {
     footer {
       padding: 0 2%; } }
@@ -922,6 +995,7 @@ footer {
       top: 140px;
       left: -70px;
       z-index: 999; }
+  footer #block-ourstudio,
   footer #block-ourstudioblockwithcontactsinfooter {
     z-index: 99;
     position: relative;
@@ -929,10 +1003,14 @@ footer {
     top: -70px;
     max-width: 300px; }
     @media (max-width: 1024px) {
+      footer #block-ourstudio,
       footer #block-ourstudioblockwithcontactsinfooter {
         left: 60%; } }
+    footer #block-ourstudio .field--name-body p:nth-child(2),
     footer #block-ourstudioblockwithcontactsinfooter .field--name-body p:nth-child(2) {
       display: none; }
+    footer #block-ourstudio .field--name-body p,
+    footer #block-ourstudio .field--name-field-phone,
     footer #block-ourstudioblockwithcontactsinfooter .field--name-body p,
     footer #block-ourstudioblockwithcontactsinfooter .field--name-field-phone {
       color: #ffffff;
@@ -940,6 +1018,7 @@ footer {
       font-size: 14px;
       font-weight: 300;
       line-height: 26px; }
+    footer #block-ourstudio .field--name-body:before,
     footer #block-ourstudioblockwithcontactsinfooter .field--name-body:before {
       content: '';
       display: block;
@@ -949,6 +1028,7 @@ footer {
       background: url("../img/footer-location-icon.png") center center no-repeat;
       height: 50px;
       width: 50px; }
+    footer #block-ourstudio .field--name-field-phone:before,
     footer #block-ourstudioblockwithcontactsinfooter .field--name-field-phone:before {
       content: '';
       display: block;
@@ -1029,7 +1109,7 @@ footer {
   footer #block-footernav {
     z-index: 9;
     position: relative;
-    top: -180px;
+    top: -210px;
     left: -10px; }
     @media (max-width: 1024px) {
       footer #block-footernav {
@@ -1065,6 +1145,35 @@ footer {
       footer #block-copyrightblockblockinfooter {
         left: 60%;
         top: 365px; } }
+  footer #block-socialicon {
+    position: relative;
+    top: -290px;
+    left: 75%;
+    z-index: 999;
+    display: inline-block; }
+    footer #block-socialicon .field__label {
+      display: none; }
+    footer #block-socialicon .fa-facebook {
+      padding-left: 2px; }
+    footer #block-socialicon .fa-google-plus {
+      margin-left: -2px; }
+    footer #block-socialicon .field__item {
+      display: inline-block;
+      border: 1px solid #ffffff;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      height: 35px;
+      padding-left: 8px;
+      padding-top: 4px;
+      width: 35px;
+      margin-right: 7px; }
+      footer #block-socialicon .field__item a {
+        color: #ffffff;
+        font-size: 18px; }
+      footer #block-socialicon .field__item:hover {
+        border-color: #00e0d0; }
+        footer #block-socialicon .field__item:hover a {
+          color: #00e0d0; }
   footer::after {
     content: "";
     display: block;

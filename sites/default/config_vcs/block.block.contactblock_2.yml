@@ -12,7 +12,7 @@ dependencies:
 id: contactblock_2
 theme: omega_sub
 region: footer
-weight: -9
+weight: -11
 provider: null
 plugin: contact_block
 settings:

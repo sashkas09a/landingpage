@@ -2,14 +2,17 @@ uuid: 5803e629-3d8d-4cf4-aa95-7ee5a9cc3c39
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:block_our_studio:fd1f2cc7-0a19-4a11-910d-795a0cf500ba'
   module:
+    - block_content
     - system
   theme:
     - omega_sub
 id: ourstudio
 theme: omega_sub
 region: footer
-weight: -10
+weight: -12
 provider: null
 plugin: 'block_content:fd1f2cc7-0a19-4a11-910d-795a0cf500ba'
 settings:

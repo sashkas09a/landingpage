@@ -3,8 +3,6 @@
 @import 'global';
 @import 'mixins';
 
-
-
 .overlay {
   background: $overlay_background;
   opacity: 0.85;
@@ -26,6 +24,7 @@
   z-index: 9999;
   width: 100%;
 }
+
 #about,
 #contact,
 #expertise,
@@ -50,8 +49,12 @@ header {
 
       .item {
         height: $header_height !important;
-        background: $forest_background center center;
-        background-size: cover;
+        @for $i from 1 through 4 {
+          &:nth-child(#{$i}) {
+            background: url("../img/header-bg-#{$i}.jpg") center center no-repeat;
+            background-size: cover;
+          }
+        }
 
         > :after {
           @include overlay($header_top, $header_height);
@@ -166,12 +169,14 @@ header {
     z-index: 500;
     text-align: center;
   }
-
-  .views-field-view-node span a {
-    top: 445px;
+  .view-footer {
+    a {
+      position: absolute;
+      top: 445px;
+    }
   }
-}
 
+}
 #about {
   height: $about_height;
   padding: 70px 5%;
@@ -196,6 +201,7 @@ header {
     }
 
     .views-field-body {
+      display: none;
       opacity: 0.75;
       color: $gray;
       font-family: $roboto;
@@ -225,10 +231,8 @@ header {
       }
     }
 
-    .views-field-view-node {
-      span a {
-        top: 210px;
-      }
+    #loadMore {
+      top: 210px;
     }
   }
 }
@@ -239,7 +243,29 @@ header {
   background-size: cover;
 
   .modal-dialog {
-    width: 70%;
+    margin-top: 7%;
+
+    .modal-content {
+      border: 0;
+      border-radius: 0;
+    }
+
+    .modal-body {
+      padding: 0;
+
+      button {
+        color: #000;
+        opacity: 0.6;
+        margin-right: 10px;
+        outline: none;
+      }
+    }
+    width: 80% !important;
+
+    iframe {
+      width: 100%;
+      margin-bottom: -5px;
+    }
   }
 
   .play_button {
@@ -312,7 +338,6 @@ header {
       font-weight: 400;
       text-transform: none;
       margin: 20px 0;
-
       // &:after {
       //   content: '';
       //   width: 50px;
@@ -414,6 +439,12 @@ header {
     text-align: center;
     display: flex;
     justify-content: center;
+    @for $i from 1 through 4 {
+      .col-#{$i} > .views-row > .views-field-field-image {
+        background: url("../img/team-member-#{$i}.jpg") center center no-repeat;
+        background-size: cover;
+      }
+    }
 
     .views-col {
       display: flex;
@@ -524,22 +555,28 @@ header {
 
     .view-content {
       padding-top: 90px;
-      // @for $i from 1 through 6 {
+      @for $i from 1 through 6 {
+        .row-1 > .col-#{$i} > .views-field-field-image {
+          background: url('../img/works-#{$i}.jpg') center center no-repeat;
+          background-size: cover;
+        }
+      }
+      @for $i from 1 through 6 {
+        .row-2 > .col-#{$i} > .views-field-field-image {
+          background: url('../img/works-#{$i + 6}.jpg') center center no-repeat;
+          background-size: cover;
+        }
+      }
+      // @each $i, $gray_color in (1, $gray_1), (2, $gray_2), (3, $gray_3), (4, $gray_4), (5, $gray_5), (6, $gray_6) {
       //   .row-1 > .col-#{$i} > .views-field-field-image {
-      //     background-color: $gray_#{$i};
+      //     background-color: $gray_color;
       //   }
       // }
-      @each $i, $gray_color in (1, $gray_1), (2, $gray_2), (3, $gray_3), (4, $gray_4), (5, $gray_5), (6, $gray_6) {
-        .row-1 > .col-#{$i} > .views-field-field-image {
-          background-color: $gray_color;
-        }
-      }
-      @each $i, $gray_color in (1, $gray_6), (2, $gray_5), (3, $gray_4), (4, $gray_3), (5, $gray_2), (6, $gray_1) {
-        .row-2 > .col-#{$i} > .views-field-field-image {
-          background-color: $gray_color;
-        }
-      }
-
+      // @each $i, $gray_color in (1, $gray_6), (2, $gray_5), (3, $gray_4), (4, $gray_3), (5, $gray_2), (6, $gray_1) {
+      //   .row-2 > .col-#{$i} > .views-field-field-image {
+      //     background-color: $gray_color;
+      //   }
+      // }
       .views-field-field-image {
         height: 200px;
         // max-width: 267px;
@@ -599,6 +636,7 @@ header {
     color: #fff;
     top: 50px;
   }
+
   .slide_left {
     left: 35%;
   }
@@ -695,6 +733,10 @@ header {
       max-width: 460px;
     }
 
+    label {
+      display: none;
+    }
+
     input {
       height: 45px;
     }
@@ -772,6 +814,7 @@ footer {
   background: $footer_background center center no-repeat;
   background-size: cover;
   padding: 0 15%;
+  margin-bottom: -1px;
   @media (max-width: 1200px) {
     padding: 0 2%;
   }
@@ -836,6 +879,7 @@ footer {
     }
   }
 
+  #block-ourstudio,
   #block-ourstudioblockwithcontactsinfooter {
     z-index: 99;
     position: relative;
@@ -942,7 +986,7 @@ footer {
   #block-footernav {
     z-index: 9;
     position: relative;
-    top: -180px;
+    top: -210px;
     left: -10px;
     @media (max-width: 1024px) {
       top: -110px;
@@ -983,6 +1027,45 @@ footer {
     @media (max-width: 912px) {
       left: 60%;
       top: 365px;
+    }
+  }
+
+  #block-socialicon {
+    position: relative;
+    top: -290px;
+    left: 75%;
+    z-index: 999;
+    display: inline-block;
+
+    .field__label {
+      display: none;
+    }
+    .fa-facebook {
+      padding-left: 2px;
+    }
+    .fa-google-plus {
+      margin-left: -2px;
+    }
+    .field__item {
+      display: inline-block;
+      border: 1px solid $white;
+      border-radius: 50%;
+      height: 35px;
+    padding-left: 8px;
+    padding-top: 4px;
+    width: 35px;
+    margin-right: 7px;
+      a {
+        color: $white;
+        font-size: 18px;
+      }
+      &:hover {
+        a {
+            color: $color_1;
+        }
+
+        border-color: $color_1;
+      }
     }
   }
 

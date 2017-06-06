@@ -10,10 +10,12 @@ omega_sub:
   js:
     js/jquery-3.2.1.min.js: {}
     js/bootstrap.js: {}
+    js/font-awesome.js: {}
     js/omega_sub.js: {}
   css:
     theme:
       style/css/bootstrap.css: {}
+      style/font-awesome/css/font-awesome.css: {}
       style/css/omega_sub.css: {}
     layout:
       #style/css/layout/primary-layout.css: {}

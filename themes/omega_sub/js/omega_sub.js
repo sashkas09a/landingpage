@@ -39,3 +39,37 @@ var $item = $('.carousel .item');
      interval: 5000,
      pause: "false"
  });
+
+ /*
+ 	Load more content with jQuery - May 21, 2013
+ 	(c) 2013 @ElmahdiMahmoud
+ */
+
+ $(function () {
+     $("p").slice(0, 2).show();
+     $("#loadMore").on('click', function (e) {
+         e.preventDefault();
+         $("p:hidden").slice(0, 1).slideDown();
+         if ($("p:hidden").length == 0) {
+             $("#load").fadeOut('slow');
+         }
+         $('html,body').animate({
+             scrollTop: $(this).offset().top
+         }, 1500);
+     });
+ });
+
+ $('a[href=#top]').click(function () {
+     $('body,html').animate({
+         scrollTop: 0
+     }, 600);
+     return false;
+ });
+
+ $(window).scroll(function () {
+     if ($(this).scrollTop() > 50) {
+         $('.totop a').fadeIn();
+     } else {
+         $('.totop a').fadeOut();
+     }
+ });
