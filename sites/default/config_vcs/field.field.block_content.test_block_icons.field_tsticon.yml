@@ -1,0 +1,27 @@
+uuid: ed739356-bbad-4e34-abc9-6995253f5542
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.test_block_icons
+    - field.storage.block_content.field_tsticon
+  module:
+    - text
+id: block_content.test_block_icons.field_tsticon
+field_name: field_tsticon
+entity_type: block_content
+bundle: test_block_icons
+label: tsticon
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '<a href="https://www.google.com.ua/"><span class="fa fa-twitter" aria-hidden="true"</span></a>'
+    format: basic_html
+  -
+    value: '<a href="https://www.google.com.ua/">e</a>'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

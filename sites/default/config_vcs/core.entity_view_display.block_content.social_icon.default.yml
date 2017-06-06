@@ -1,0 +1,21 @@
+uuid: 9bfc36a7-030f-43d7-b895-f4026c99e23b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_icon
+    - field.field.block_content.social_icon.field_with_icons
+  module:
+    - text
+id: block_content.social_icon.default
+targetEntityType: block_content
+bundle: social_icon
+mode: default
+content:
+  field_with_icons:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden: {  }

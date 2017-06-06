@@ -1,0 +1,20 @@
+uuid: d4cec76e-3d8f-4662-adaa-8f94df45c532
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_tsticon
+field_name: field_tsticon
+entity_type: block_content
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,39 @@
+uuid: aab6928e-6e54-413c-b698-c4e8b763201c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_icon
+    - field.storage.block_content.field_with_icons
+  module:
+    - text
+id: block_content.social_icon.field_with_icons
+field_name: field_with_icons
+entity_type: block_content
+bundle: social_icon
+label: 'Field with icons'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '<a href="https://www.facebook.com/"><span class="fa fa-facebook" aria-hidden="true"></span></a>'
+    format: basic_html
+  -
+    value: '<a href="https://twitter.com/"><span class="fa fa-twitter" aria-hidden="true"></span></a>'
+    format: basic_html
+  -
+    value: '<a href="https://www.instagram.com/"><span class="fa fa-instagram" aria-hidden="true"></span></a>'
+    format: basic_html
+  -
+    value: '<a href="https://dribbble.com/"><span class="fa fa-dribbble" aria-hidden="true"></span></a>'
+    format: basic_html
+  -
+    value: '<a href="https://plus.google.com/collections/featured"><span class="fa fa-google-plus" aria-hidden="true"></span></a>'
+    format: basic_html
+  -
+    value: '<a href="https://www.youtube.com/"><span class="fa fa-youtube-play" aria-hidden="true"></span></a>'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

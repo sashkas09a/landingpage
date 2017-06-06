@@ -1,0 +1,49 @@
+uuid: 63e09558-8544-4755-8e8c-a8ea1cfaa7d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.test_block_icons
+    - field.field.block_content.test_block_icons.field_link
+    - field.field.block_content.test_block_icons.field_lsit_social_icon
+    - field.field.block_content.test_block_icons.field_page_link
+    - field.field.block_content.test_block_icons.field_tsticon
+  module:
+    - link
+    - options
+    - text
+id: block_content.test_block_icons.default
+targetEntityType: block_content
+bundle: test_block_icons
+mode: default
+content:
+  field_link:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_lsit_social_icon:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_page_link:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_tsticon:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden: {  }

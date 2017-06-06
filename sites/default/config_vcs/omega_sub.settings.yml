@@ -20,7 +20,7 @@ favicon:
   use_default: false
   path: 'public://Logo_0_0_0.png'
   mimetype: image/png
-omega_toggle_intro: 1
+omega_toggle_intro: 0
 enable_backups: 0
 force_subtheme_creation: 0
 block_demo_mode: 1
@@ -39,7 +39,7 @@ _core:
   default_config_hash: zjp0zDu5fysUpjeh-_XuVvB2CcK317j799amK5TXUkA
 compile_scss: 1
 show_compile_warning: 1
-enable_omega_badge: 1
+enable_omega_badge: 0
 styles:
   omega_sub/omega_sub: 1
   omega/omega: 1

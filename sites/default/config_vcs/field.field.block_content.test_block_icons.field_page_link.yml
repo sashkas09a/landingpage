@@ -1,0 +1,23 @@
+uuid: 3788c374-1e87-4085-b7fa-614806767334
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.test_block_icons
+    - field.storage.block_content.field_page_link
+  module:
+    - link
+id: block_content.test_block_icons.field_page_link
+field_name: field_page_link
+entity_type: block_content
+bundle: test_block_icons
+label: 'Page link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

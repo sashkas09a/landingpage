@@ -2,17 +2,14 @@ uuid: 0fb20a46-57ba-4914-98d2-c7627bac7d70
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:footer_block_copyright_:dbe9689f-9905-41ac-8983-20258f373152'
   module:
-    - block_content
     - system
   theme:
     - omega_sub
 id: copyrightblockblockinfooter
 theme: omega_sub
 region: footer
-weight: -11
+weight: -12
 provider: null
 plugin: 'block_content:dbe9689f-9905-41ac-8983-20258f373152'
 settings:

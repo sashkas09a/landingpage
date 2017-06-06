@@ -222,7 +222,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<a href="https://www.google.com.ua/">LOAD MORE</a>'
+            value: '<a href="#">LOAD MORE</a>'
             format: full_html
           plugin_id: text
       empty: {  }

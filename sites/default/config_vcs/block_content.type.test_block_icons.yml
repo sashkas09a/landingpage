@@ -1,0 +1,8 @@
+uuid: af31077e-0277-4a61-a64a-c6e33a570937
+langcode: en
+status: true
+dependencies: {  }
+id: test_block_icons
+label: 'Test block icons'
+revision: 0
+description: ''

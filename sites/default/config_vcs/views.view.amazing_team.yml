@@ -377,7 +377,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<a href="https://www.google.com.ua">WE ARE HIRING</a>'
+            value: '<a href="#">WE ARE HIRING</a>'
             format: full_html
           plugin_id: text
       empty: {  }

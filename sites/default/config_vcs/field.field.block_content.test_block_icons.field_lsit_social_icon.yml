@@ -1,0 +1,21 @@
+uuid: 274ea533-4ab5-4c9d-9064-bef8457fcd5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.test_block_icons
+    - field.storage.block_content.field_lsit_social_icon
+  module:
+    - options
+id: block_content.test_block_icons.field_lsit_social_icon
+field_name: field_lsit_social_icon
+entity_type: block_content
+bundle: test_block_icons
+label: 'lsit social icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

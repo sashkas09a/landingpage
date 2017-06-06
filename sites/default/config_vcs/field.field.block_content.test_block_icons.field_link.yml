@@ -1,0 +1,27 @@
+uuid: 527a9b70-1949-4cac-baf1-0b57d90f53c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.test_block_icons
+    - field.storage.block_content.field_link
+  module:
+    - text
+id: block_content.test_block_icons.field_link
+field_name: field_link
+entity_type: block_content
+bundle: test_block_icons
+label: Link
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>&lt;a href=\"https://www.google.com.ua/\"&gt;HI&lt;/a&gt;</p>\r\n"
+    format: full_html
+  -
+    value: "<p>&lt;a href=\"https://www.google.com.ua/\"&gt;Hi GO&lt;/a&gt;</p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long
