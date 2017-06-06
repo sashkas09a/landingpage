@@ -1150,7 +1150,7 @@ footer {
     top: -290px;
     left: 75%;
     z-index: 999;
-    display: inline-block; }
+    width: 300px; }
     footer #block-socialicon .field__label {
       display: none; }
     footer #block-socialicon .fa-facebook {
