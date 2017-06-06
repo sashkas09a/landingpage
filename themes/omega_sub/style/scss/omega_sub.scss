@@ -201,7 +201,7 @@ header {
     }
 
     .views-field-body {
-      display: none;
+      // display: none;
       opacity: 0.75;
       color: $gray;
       font-family: $roboto;
@@ -231,7 +231,7 @@ header {
       }
     }
 
-    #loadMore {
+    .view-footer a {
       top: 210px;
     }
   }
