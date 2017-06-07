@@ -57,21 +57,21 @@ input[type="submit"] {
 }
 
 .video-ov::after {
-  top: $video_top + 130px !important;
+  top: $video_top + 70px !important;
 }
 .team-ov::after {
-  top: $team_top + 130px !important;
+  top: $team_top + 70px !important;
 }
 .testimonials-ov::after {
-  top: $testimonials_top + 130px !important;
+  top: $testimonials_top + 70px !important;
 }
 .footer-ov::after {
-  top: $footer_top + 130px !important;
+  top: $footer_top + 70px !important;
 }
 
 .testimonials-ov-cl::after {
-  top: $testimonials_top + 260px !important;
+  top: $testimonials_top + 140px !important;
 }
 .footer-ov-cl::after {
-  top: $footer_top + 260px !important;
+  top: $footer_top + 140px !important;
 }

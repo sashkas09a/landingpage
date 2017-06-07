@@ -58,24 +58,24 @@ var $item = $('.carousel .item');
 
  $(document).ready(function(){
    $("#loadMore").click(function(){
-   document.getElementById('loadMore').style.pointerEvents = 'none';
+   $("#loadMore").css("display", "none");
    $(this).data('clicked', true);
    $("#our-story-p-3").show();
    $("#our-story-p-4").show();
-   $("#about").css("height", "+=130");
+   $("#about").css("height", "+=70");
 
    if($("#loadMoreWorks").data('clicked')) {
      $("#video").addClass("video-ov");
      $("#team").addClass("team-ov");
      $("#testimonials").addClass("testimonials-ov-cl");
      $("footer").addClass("footer-ov-cl");
-     $(".slide_right").css("top", "+=130");
+     $(".slide_right").css("top", "+=70");
    } else {
      $("#video").addClass("video-ov");
      $("#team").addClass("team-ov");
      $("#testimonials").addClass("testimonials-ov");
      $("footer").addClass("footer-ov");
-     $(".slide_right").css("top", "+=130");
+     $(".slide_right").css("top", "+=70");
    }
  });
 
@@ -83,19 +83,18 @@ var $item = $('.carousel .item');
 
  $(document).ready(function(){
    $("#loadMoreWorks").click(function(){
-     document.getElementById('loadMoreWorks').style.pointerEvents = 'none';
+     $("#loadMoreWorks").css("display", "none");
    $(this).data('clicked', true);
    $(".row-3").show();
-   $("#works").css("height", "+=130");
-   $("#loadMoreWorks").css("bottom", "+=40");
+   $("#works").css("height", "+=70");
    if($('#loadMore').data('clicked')) {
      $("#testimonials").addClass("testimonials-ov-cl");
      $("footer").addClass("footer-ov-cl");
-     $(".slide_right").css("top", "+=130");
+     $(".slide_right").css("top", "+=70");
 } else {
   $("#testimonials").addClass("testimonials-ov");
   $("footer").addClass("footer-ov");
-  $(".slide_right").css("top", "+=130");
+  $(".slide_right").css("top", "+=70");
 }
  });
  });

@@ -116,22 +116,22 @@ input[type="submit"] {
     cursor: pointer; }
 
 .video-ov::after {
-  top: 1200px !important; }
+  top: 1140px !important; }
 
 .team-ov::after {
-  top: 2570px !important; }
+  top: 2510px !important; }
 
 .testimonials-ov::after {
-  top: 4030px !important; }
+  top: 3970px !important; }
 
 .footer-ov::after {
-  top: 5180px !important; }
+  top: 5120px !important; }
 
 .testimonials-ov-cl::after {
-  top: 4160px !important; }
+  top: 4040px !important; }
 
 .footer-ov-cl::after {
-  top: 5310px !important; }
+  top: 5190px !important; }
 
 @font-face {
   font-family: 'Playfair Display';
@@ -1349,22 +1349,22 @@ input[type="submit"] {
     cursor: pointer; }
 
 .video-ov::after {
-  top: 1200px !important; }
+  top: 1140px !important; }
 
 .team-ov::after {
-  top: 2570px !important; }
+  top: 2510px !important; }
 
 .testimonials-ov::after {
-  top: 4030px !important; }
+  top: 3970px !important; }
 
 .footer-ov::after {
-  top: 5180px !important; }
+  top: 5120px !important; }
 
 .testimonials-ov-cl::after {
-  top: 4160px !important; }
+  top: 4040px !important; }
 
 .footer-ov-cl::after {
-  top: 5310px !important; }
+  top: 5190px !important; }
 
 @font-face {
   font-family: 'Playfair Display';
