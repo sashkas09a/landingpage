@@ -1,0 +1,6 @@
+loader:
+  js:
+    js/loader.js: {}
+  css:
+    theme:
+      css/loader.css: {}

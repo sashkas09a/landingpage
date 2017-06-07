@@ -212,6 +212,9 @@ header {
       top: 30px;
       left: 45%;
       max-width: 550px;
+      p {
+        display: none;
+      }
     }
 
     .views-field-field-image {

@@ -1,0 +1,11 @@
+name: field_load_more
+type: module
+description: Provides configuration to load n items of a multi-valued field with a load more button.
+# core: 8.x
+package: fields
+
+# Information added by Drupal.org packaging script on 2016-11-19
+version: '8.x-1.0'
+core: '8.x'
+project: 'field_load_more'
+datestamp: 1479544741

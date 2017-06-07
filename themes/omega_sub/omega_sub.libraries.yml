@@ -11,6 +11,7 @@ omega_sub:
     js/jquery-3.2.1.min.js: {}
     js/bootstrap.js: {}
     js/font-awesome.js: {}
+    js/custom.js: {}
     js/omega_sub.js: {}
   css:
     theme:

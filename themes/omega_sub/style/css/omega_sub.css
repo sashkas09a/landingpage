@@ -318,6 +318,8 @@ header {
       top: 30px;
       left: 45%;
       max-width: 550px; }
+      #about #block-omega-sub-views-block-our-story-block-1-2 .views-field-body p {
+        display: none; }
     #about #block-omega-sub-views-block-our-story-block-1-2 .views-field-field-image {
       position: absolute;
       left: 20%;
