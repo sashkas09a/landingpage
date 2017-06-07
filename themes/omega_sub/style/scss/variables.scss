@@ -29,6 +29,8 @@ $works_top: $team_top + $team_height;
 $testimonials_top: $works_top + $works_height;
 $contact_top: $testimonials_top + testimonials_height; // $footer_top:           $contact_top + $contact_height;
 $footer_top: 5050px;
+
+
 // backgrounds
 $video_background: url("../img/video-bg.jpg");
 $forest_background: url("../img/forest-bg.jpg");

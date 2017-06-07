@@ -82,6 +82,7 @@ a:hover {
   100% {
     color: #00e0d0; } }
 
+#loadMore,
 .view-footer a,
 .views-field-view-node span a,
 input[type="submit"] {
@@ -103,6 +104,7 @@ input[type="submit"] {
       -ms-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
   position: absolute; }
+  #loadMore:hover,
   .view-footer a:hover,
   .views-field-view-node span a:hover,
   input[type="submit"]:hover {
@@ -110,6 +112,24 @@ input[type="submit"] {
             animation: learn_more_button 1s ease both;
     text-decoration: none !important;
     cursor: pointer; }
+
+.video-ov::after {
+  top: 1200px !important; }
+
+.team-ov::after {
+  top: 2570px !important; }
+
+.testimonials-ov::after {
+  top: 4030px !important; }
+
+.footer-ov::after {
+  top: 5180px !important; }
+
+.testimonials-ov-cl::after {
+  top: 4160px !important; }
+
+.footer-ov-cl::after {
+  top: 5310px !important; }
 
 @font-face {
   font-family: 'Playfair Display';

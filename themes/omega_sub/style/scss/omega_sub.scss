@@ -182,7 +182,8 @@ header {
   padding: 70px 5%;
   position: relative;
 
-  #block-omega-sub-views-block-our-story-block-1-2 {
+
+  #block-views-block-our-story-block-1 {
     position: relative;
 
     .views-field-title {
@@ -200,7 +201,7 @@ header {
       }
     }
 
-    .views-field-body {
+    .views-field-nothing span {
       // display: none;
       opacity: 0.75;
       color: $gray;
@@ -212,8 +213,16 @@ header {
       top: 30px;
       left: 45%;
       max-width: 550px;
-      p {
+      #our-story-p-3, #our-story-p-4 {
         display: none;
+      }
+      a {
+        position: static;
+        margin-top: 15px;
+        left: 0;
+        transform: none;
+        width: 125px;
+        display: block;
       }
     }
 
@@ -234,9 +243,6 @@ header {
       }
     }
 
-    .view-footer a {
-      top: 210px;
-    }
   }
 }
 
@@ -558,6 +564,9 @@ header {
 
     .view-content {
       padding-top: 90px;
+      .row-3 {
+        display: none;
+      }
       @for $i from 1 through 6 {
         .row-1 > .col-#{$i} > .views-field-field-image {
           background: url('../img/works-#{$i}.jpg') center center no-repeat;
@@ -567,6 +576,12 @@ header {
       @for $i from 1 through 6 {
         .row-2 > .col-#{$i} > .views-field-field-image {
           background: url('../img/works-#{$i + 6}.jpg') center center no-repeat;
+          background-size: cover;
+        }
+      }
+      @for $i from 1 through 6 {
+        .row-3 > .col-#{$i} > .views-field-field-image {
+          background: url('../img/works-#{$i + 3}.jpg') center center no-repeat;
           background-size: cover;
         }
       }
