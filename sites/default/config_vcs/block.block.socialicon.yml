@@ -1,9 +1,9 @@
-uuid: 86c33499-0661-43c7-b7ba-105e6843e686
+uuid: 27d561a0-1696-4efd-b145-51a79a520948
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:social_icon:71d4bb0c-2217-41c7-a8a1-2c67bf500cfa'
+    - 'block_content:social_icon:c8d61932-5f98-4ad7-bfcf-ad909772577c'
   module:
     - block_content
     - system
@@ -12,11 +12,11 @@ dependencies:
 id: socialicon
 theme: omega_sub
 region: footer
-weight: -8
+weight: -10
 provider: null
-plugin: 'block_content:71d4bb0c-2217-41c7-a8a1-2c67bf500cfa'
+plugin: 'block_content:c8d61932-5f98-4ad7-bfcf-ad909772577c'
 settings:
-  id: 'block_content:71d4bb0c-2217-41c7-a8a1-2c67bf500cfa'
+  id: 'block_content:c8d61932-5f98-4ad7-bfcf-ad909772577c'
   label: 'Social icon'
   provider: block_content
   label_display: '0'

@@ -68,11 +68,13 @@ var $item = $('.carousel .item');
      $("#team").addClass("team-ov");
      $("#testimonials").addClass("testimonials-ov-cl");
      $("footer").addClass("footer-ov-cl");
+     $(".glyphicon-menu-right").css("top", "+=260");
    } else {
      $("#video").addClass("video-ov");
      $("#team").addClass("team-ov");
      $("#testimonials").addClass("testimonials-ov");
      $("footer").addClass("footer-ov");
+     $(".glyphicon-menu-right").css("top", "+=130");
    }
  });
  });
@@ -86,9 +88,11 @@ var $item = $('.carousel .item');
    if($('#loadMore').data('clicked')) {
      $("#testimonials").addClass("testimonials-ov-cl");
      $("footer").addClass("footer-ov-cl");
+     $(".glyphicon-menu-right").css("top", "+=260");
 } else {
   $("#testimonials").addClass("testimonials-ov");
   $("footer").addClass("footer-ov");
+  $(".glyphicon-menu-right").css("top", "+=130");
 }
 
  });

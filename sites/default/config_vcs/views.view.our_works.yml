@@ -52,7 +52,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 12
+          items_per_page: 18
           offset: 0
       style:
         type: grid
@@ -222,7 +222,7 @@ display:
           empty: false
           tokenize: false
           content:
-            value: '<a href="#">LOAD MORE</a>'
+            value: '<a id="loadMoreWorks">LOAD MORE</a>'
             format: full_html
           plugin_id: text
       empty: {  }

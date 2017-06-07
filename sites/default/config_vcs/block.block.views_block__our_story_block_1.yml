@@ -1,4 +1,4 @@
-uuid: 919bf1eb-794b-4bb6-b49e-4ef0a4cda437
+uuid: f0a358a0-bdae-4d9b-a96f-eb683162a3a0
 langcode: en
 status: true
 dependencies:
@@ -9,10 +9,10 @@ dependencies:
     - views
   theme:
     - omega_sub
-id: omega_sub_views_block__our_story_block_1_2
+id: views_block__our_story_block_1
 theme: omega_sub
 region: about
-weight: -7
+weight: 0
 provider: null
 plugin: 'views_block:our_story-block_1'
 settings:
