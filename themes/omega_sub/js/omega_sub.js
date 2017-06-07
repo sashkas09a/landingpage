@@ -58,6 +58,7 @@ var $item = $('.carousel .item');
 
  $(document).ready(function(){
    $("#loadMore").click(function(){
+   document.getElementById('loadMore').style.pointerEvents = 'none';
    $(this).data('clicked', true);
    $("#our-story-p-3").show();
    $("#our-story-p-4").show();
@@ -68,19 +69,21 @@ var $item = $('.carousel .item');
      $("#team").addClass("team-ov");
      $("#testimonials").addClass("testimonials-ov-cl");
      $("footer").addClass("footer-ov-cl");
-     $(".glyphicon-menu-right").css("top", "+=260");
+     $(".slide_right").css("top", "+=130");
    } else {
      $("#video").addClass("video-ov");
      $("#team").addClass("team-ov");
      $("#testimonials").addClass("testimonials-ov");
      $("footer").addClass("footer-ov");
-     $(".glyphicon-menu-right").css("top", "+=130");
+     $(".slide_right").css("top", "+=130");
    }
  });
+
  });
 
  $(document).ready(function(){
    $("#loadMoreWorks").click(function(){
+     document.getElementById('loadMoreWorks').style.pointerEvents = 'none';
    $(this).data('clicked', true);
    $(".row-3").show();
    $("#works").css("height", "+=130");
@@ -88,12 +91,11 @@ var $item = $('.carousel .item');
    if($('#loadMore').data('clicked')) {
      $("#testimonials").addClass("testimonials-ov-cl");
      $("footer").addClass("footer-ov-cl");
-     $(".glyphicon-menu-right").css("top", "+=260");
+     $(".slide_right").css("top", "+=130");
 } else {
   $("#testimonials").addClass("testimonials-ov");
   $("footer").addClass("footer-ov");
-  $(".glyphicon-menu-right").css("top", "+=130");
+  $(".slide_right").css("top", "+=130");
 }
-
  });
  });
