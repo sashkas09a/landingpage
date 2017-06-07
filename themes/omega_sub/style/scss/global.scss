@@ -1,6 +1,9 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+#omega-screen--indicator {
+  display: none;
+}
 a:hover {
   text-decoration: none !important;
   &:hover {

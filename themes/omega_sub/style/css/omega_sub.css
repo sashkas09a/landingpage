@@ -49,6 +49,9 @@
   font-family: 'Roboto Thin';
   src: url("../fonts/roboto/Roboto-Thin.ttf"); }
 
+#omega-screen--indicator {
+  display: none; }
+
 a:hover {
   text-decoration: none !important; }
   a:hover:hover {
@@ -1296,6 +1299,9 @@ footer {
 @font-face {
   font-family: 'Roboto Thin';
   src: url("../fonts/roboto/Roboto-Thin.ttf"); }
+
+#omega-screen--indicator {
+  display: none; }
 
 a:hover {
   text-decoration: none !important; }
