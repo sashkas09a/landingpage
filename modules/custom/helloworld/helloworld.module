@@ -11,20 +11,20 @@ function helloworld_form_alter(&$form, $form_state, $form_id) {
   if ($form_id == 'contact_message_feedback_form') {
     $form['actions']['preview']['#access'] = FALSE;
   	$form['actions']['submit']['#value'] = 'SUBMIT';
-    $form['actions']['submit']['#ajax'] = array(
-      'wrapper' => 'form_wrapper',
-      'callback' => 'custom_callback',
-      'event' => 'click',
-      'progress' => [
-      'type' => 'throbber',
-      'message' => 'Veryfieng'],
-);
-    $form['test_selection'] = [
-      '#type' => 'hidden', 
-      '#prefix' => '<div id="form_wrapper">',
-      '#suffix' => '</div>',
-      '#weight' => 1,
-    ];
+//     $form['actions']['submit']['#ajax'] = array(
+//       'wrapper' => 'form_wrapper',
+//       'callback' => 'custom_callback',
+//       'event' => 'click',
+//       'progress' => [
+//       'type' => 'throbber',
+//       'message' => 'Veryfieng'],
+// );
+//     $form['test_selection'] = [
+//       '#type' => 'hidden', 
+//       '#prefix' => '<div id="form_wrapper">',
+//       '#suffix' => '</div>',
+//       '#weight' => 1,
+//     ];
     
   	$form['field_email']['widget']['0']['value']['#placeholder'] = 'Email';
   	$form['field_email']['widget']['0']['value']['#title'] = FALSE;
