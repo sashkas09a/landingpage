@@ -1,7 +1,18 @@
 uuid: a4487cd4-e84f-41ce-9888-b9beabc4410f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - contact_ajax
+third_party_settings:
+  contact_ajax:
+    enabled: true
+    prefix_id: ''
+    render_selector: ''
+    confirmation_type: 3
+    load_from_message:
+      value: "<p>Thanks for subscribe</p>\r\n"
+      format: basic_html
 id: stay_in_touch
 label: 'STAY IN TOUCH'
 recipients:

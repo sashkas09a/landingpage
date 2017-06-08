@@ -9,6 +9,7 @@ module:
   comment: 0
   config: 0
   contact: 0
+  contact_ajax: 0
   contact_block: 0
   contextual: 0
   datetime: 0
@@ -46,6 +47,7 @@ module:
   update: 0
   user: 0
   video_embed_field: 0
+  views_infinite_scroll: 0
   views_ui: 0
   menu_link_content: 1
   views: 10
