@@ -8,7 +8,6 @@ omega_sub:
       style/css/omega_sub.css: 'style/scss/omega_sub.scss'
   version: VERSION
   js:
-    js/jquery-3.2.1.min.js: {}
     js/bootstrap.js: {}
     js/font-awesome.js: {}
     js/custom.js: {}

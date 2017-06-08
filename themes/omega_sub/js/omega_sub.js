@@ -1,6 +1,7 @@
-autoPlayYouTubeModal();
 
+(function($) {
 //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+autoPlayYouTubeModal();
 function autoPlayYouTubeModal() {
     var trigger = $("body").find('[data-toggle="modal"]');
     trigger.click(function () {
@@ -81,20 +82,28 @@ var $item = $('.carousel .item');
 
  });
 
- $(document).ready(function(){
-   $("#loadMoreWorks").click(function(){
-     $("#loadMoreWorks").css("display", "none");
-   $(this).data('clicked', true);
-   $(".row-3").show();
-   $("#works").css("height", "+=70");
-   if($('#loadMore').data('clicked')) {
-     $("#testimonials").addClass("testimonials-ov-cl");
-     $("footer").addClass("footer-ov-cl");
-     $(".slide_right").css("top", "+=70");
-} else {
-  $("#testimonials").addClass("testimonials-ov");
-  $("footer").addClass("footer-ov");
-  $(".slide_right").css("top", "+=70");
-}
- });
- });
+ // $(document).ready(function(){
+ //   $("a[rel='next']").on('click', function() {
+ //     $("#works").css("height", "+=200");
+ //   });
+ // });
+ //
+ // $("a[rel='next']").on('click', function() {
+ //   $("#works").css("height", "+=200");
+ // });
+
+ Drupal.behaviors.myModuleBehavior = {
+     attach: function (context, settings) {
+       $(context).find('a.button').once('myCustomBehavior').click(function () {
+         test();
+       });
+     }
+   };
+
+   function test() {
+     $("#works").css("height", "+=200");
+   }
+
+
+
+})(jQuery);

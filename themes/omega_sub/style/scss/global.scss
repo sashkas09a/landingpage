@@ -4,8 +4,12 @@
 #omega-screen--indicator {
   display: none;
 }
+#toolbar-bar {
+  z-index: 1000;
+}
 a:hover {
   text-decoration: none !important;
+
   &:hover {
     cursor: pointer;
   }
@@ -22,7 +26,6 @@ a:hover {
     background: $color_1;
   }
 }
-
 @keyframes nav {
   0% {
     color: $white;
@@ -37,6 +40,7 @@ a:hover {
 #loadMore,
 .view-footer a,
 .views-field-view-node span a,
+a.button,
 input[type="submit"] {
   color: $color_1;
   font-family: $hammersmith;
@@ -52,6 +56,7 @@ input[type="submit"] {
   cursor: pointer;
   @include left;
   position: absolute;
+
   &:hover {
     animation: learn_more_button 1s ease both;
     text-decoration: none !important;
@@ -59,15 +64,25 @@ input[type="submit"] {
   }
 }
 
+a.button {
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  border: 1px solid #00e0d0 !important;
+  padding: 10px 15px !important;
+}
+
 .video-ov::after {
   top: $video_top + 70px !important;
 }
+
 .team-ov::after {
   top: $team_top + 70px !important;
 }
+
 .testimonials-ov::after {
   top: $testimonials_top + 70px !important;
 }
+
 .footer-ov::after {
   top: $footer_top + 70px !important;
 }
@@ -75,6 +90,7 @@ input[type="submit"] {
 .testimonials-ov-cl::after {
   top: $testimonials_top + 140px !important;
 }
+
 .footer-ov-cl::after {
   top: $footer_top + 140px !important;
 }

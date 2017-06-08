@@ -50,6 +50,9 @@
 #omega-screen--indicator {
   display: none; }
 
+#toolbar-bar {
+  z-index: 1000; }
+
 a:hover {
   text-decoration: none !important; }
   a:hover:hover {
@@ -88,6 +91,7 @@ a:hover {
 #loadMore,
 .view-footer a,
 .views-field-view-node span a,
+a.button,
 input[type="submit"] {
   color: #00e0d0;
   font-family: "Hammersmith One";
@@ -110,11 +114,20 @@ input[type="submit"] {
   #loadMore:hover,
   .view-footer a:hover,
   .views-field-view-node span a:hover,
+  a.button:hover,
   input[type="submit"]:hover {
     -webkit-animation: learn_more_button 1s ease both;
             animation: learn_more_button 1s ease both;
     text-decoration: none !important;
     cursor: pointer; }
+
+a.button {
+  -webkit-border-radius: 2px !important;
+          border-radius: 2px !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1px solid #00e0d0 !important;
+  padding: 10px 15px !important; }
 
 .video-ov::after {
   top: 1140px !important; }
@@ -123,13 +136,13 @@ input[type="submit"] {
   top: 2510px !important; }
 
 .testimonials-ov::after {
-  top: 3970px !important; }
+  top: 3720px !important; }
 
 .footer-ov::after {
   top: 5120px !important; }
 
 .testimonials-ov-cl::after {
-  top: 4040px !important; }
+  top: 3790px !important; }
 
 .footer-ov-cl::after {
   top: 5190px !important; }

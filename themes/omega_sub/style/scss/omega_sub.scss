@@ -3,14 +3,7 @@
 @import 'global';
 @import 'mixins';
 
-.overlay {
-  background: $overlay_background;
-  opacity: 0.85;
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
+
 // overwrite theme's demo regions display
 
 #block-omega-sub-branding,
@@ -19,11 +12,11 @@
   display: none !important;
 }
 
-.toolbar {
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
-}
+// .toolbar {
+//   position: fixed;
+//   z-index: 9999;
+//   width: 100%;
+// }
 
 #about,
 #contact,
@@ -35,7 +28,6 @@
 header {
   height: $header_height;
   position: relative;
-  // padding-top: 30px;
   .carousel {
     height: $header_height - 30px;
 
@@ -56,9 +48,7 @@ header {
           }
         }
 
-        > :after {
-          @include overlay($header_top, $header_height);
-        }
+        box-shadow: inset 0px 0px 0px 700px $overlay_color;
       }
     }
   }
@@ -316,9 +306,7 @@ header {
     }
   }
 
-  &:after {
-    @include overlay($video_top, $video_height);
-  }
+  box-shadow: inset 0px 0px 0px 700px $overlay_color;
 }
 
 #expertise {
@@ -347,16 +335,6 @@ header {
       font-weight: 400;
       text-transform: none;
       margin: 20px 0;
-      // &:after {
-      //   content: '';
-      //   width: 50px;
-      //   height: 2px;
-      //   background-color: #413d4b;
-      //   opacity: 0.3;
-      //   position: absolute;
-      //   top: 1800px;
-      //   @include left;
-      // }
     }
   }
 
@@ -520,9 +498,7 @@ header {
     }
   }
 
-  &:after {
-    @include overlay($team_top, $team_height);
-  }
+  box-shadow: inset 0px 0px 0px 700px $overlay_color;
 }
 
 #works {
@@ -564,27 +540,27 @@ header {
 
     .view-content {
       padding-top: 90px;
-      .row-3 {
-        display: none;
-      }
-      @for $i from 1 through 6 {
-        .row-1 > .col-#{$i} > .views-field-field-image {
-          background: url('../img/works-#{$i}.jpg') center center no-repeat;
-          background-size: cover;
-        }
-      }
-      @for $i from 1 through 6 {
-        .row-2 > .col-#{$i} > .views-field-field-image {
-          background: url('../img/works-#{$i + 6}.jpg') center center no-repeat;
-          background-size: cover;
-        }
-      }
-      @for $i from 1 through 6 {
-        .row-3 > .col-#{$i} > .views-field-field-image {
-          background: url('../img/works-#{$i + 3}.jpg') center center no-repeat;
-          background-size: cover;
-        }
-      }
+      // .row-3 {
+      //   display: none;
+      // }
+      // @for $i from 1 through 6 {
+      //   .row-1 > .col-#{$i} > .views-field-field-image {
+      //     background: url('../img/works-#{$i}.jpg') center center no-repeat;
+      //     background-size: cover;
+      //   }
+      // }
+      // @for $i from 1 through 6 {
+      //   .row-2 > .col-#{$i} > .views-field-field-image {
+      //     background: url('../img/works-#{$i + 6}.jpg') center center no-repeat;
+      //     background-size: cover;
+      //   }
+      // }
+      // @for $i from 1 through 6 {
+      //   .row-3 > .col-#{$i} > .views-field-field-image {
+      //     background: url('../img/works-#{$i + 3}.jpg') center center no-repeat;
+      //     background-size: cover;
+      //   }
+      // }
       // @each $i, $gray_color in (1, $gray_1), (2, $gray_2), (3, $gray_3), (4, $gray_4), (5, $gray_5), (6, $gray_6) {
       //   .row-1 > .col-#{$i} > .views-field-field-image {
       //     background-color: $gray_color;
@@ -598,9 +574,11 @@ header {
       .views-field-field-image {
         height: 200px;
         // max-width: 267px;
-        img {
-          display: none;
-        }
+      img {
+        object-fit: cover;
+        height: 200px;
+        width: 100%;
+      }
       }
     }
   }
@@ -721,9 +699,8 @@ header {
     line-height: 22px;
   }
 
-  &:after {
-    @include overlay($testimonials_top, $testimonials_height);
-  }
+
+  box-shadow: inset 0px 0px 0px 700px $overlay_color;
 }
 
 #contact {
@@ -1087,14 +1064,6 @@ footer {
     }
   }
 
-  &::after {
-    @include overlay($footer_top, $footer_height);
-    @media (max-width: 1200px) {
-      top: 5600px;
-    }
-    @media (max-width: 1024px) {
-      height: 520px;
-    }
-  }
+  box-shadow: inset 0px 0px 0px 700px $overlay_color;
 }
 @import "breakpoints.scss";
