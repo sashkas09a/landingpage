@@ -1,5 +1,5 @@
 
-(function($) {
+(function($, Drupal, window, document, undefined) {
 //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
 autoPlayYouTubeModal();
 function autoPlayYouTubeModal() {
@@ -106,4 +106,4 @@ var $item = $('.carousel .item');
 
 
 
-})(jQuery);
+})(jQuery, Drupal, this, this.document);
