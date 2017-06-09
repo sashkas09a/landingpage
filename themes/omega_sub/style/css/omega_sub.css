@@ -693,9 +693,7 @@ header {
   #testimonials .slide_left {
     left: 35%; }
   #testimonials .slide_right {
-    right: 35%;
-    position: absolute;
-    top: 4305px; }
+    left: 62% }
   #testimonials #block-views-block-people-say-block-1 {
     margin-top: 70px; }
     #testimonials #block-views-block-people-say-block-1 .views-field-body {

@@ -64,20 +64,6 @@ var $item = $('.carousel .item');
    $("#our-story-p-3").show();
    $("#our-story-p-4").show();
    $("#about").css("height", "+=70");
-
-   if($("#loadMoreWorks").data('clicked')) {
-     $("#video").addClass("video-ov");
-     $("#team").addClass("team-ov");
-     $("#testimonials").addClass("testimonials-ov-cl");
-     $("footer").addClass("footer-ov-cl");
-     $(".slide_right").css("top", "+=70");
-   } else {
-     $("#video").addClass("video-ov");
-     $("#team").addClass("team-ov");
-     $("#testimonials").addClass("testimonials-ov");
-     $("footer").addClass("footer-ov");
-     $(".slide_right").css("top", "+=70");
-   }
  });
 
  });
