@@ -1,0 +1,31 @@
+uuid: 872f93f1-0410-45f0-b698-16c5812a490e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_our_studio:784d773a-a35c-424d-af4c-ea1d444b7301'
+  module:
+    - block_content
+    - system
+  theme:
+    - omega_sub
+id: ourstudio
+theme: omega_sub
+region: footer
+weight: -12
+provider: null
+plugin: 'block_content:784d773a-a35c-424d-af4c-ea1d444b7301'
+settings:
+  id: 'block_content:784d773a-a35c-424d-af4c-ea1d444b7301'
+  label: 'OUR STUDIO'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
